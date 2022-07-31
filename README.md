@@ -1,17 +1,17 @@
 # ClearOutsideCustomAPI
 **Webscraper for ClearOutside.com**
-\\
+<br>
 Webscrapes clearoutside depending on *your settings* and gives you output in *json.*
-\\
+<br>
 To Open Settings: `clearoutside-api -s`
 To Update JSON: `clearoutside-api -u`
-\\
+<br>
 In settings, location is changed by **pressing enter** after typing the city in. 
-\\
-###Settings Window
+<br>
+#### Settings Window
 ![Window](https://i.imgur.com/JbKPv7q.png)
-\\
-###JSON Preview:
+<br>
+#### JSON Preview:
 ```
 [
     {
