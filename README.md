@@ -1,4 +1,4 @@
-# ClearOutsideCustomAPI
+# ClearOutsideAPY
 
 ## Webscraper/API for ClearOutside.com
 
