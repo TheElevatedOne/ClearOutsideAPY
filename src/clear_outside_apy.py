@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-class ClearOutsideAPI:
+class ClearOutsideAPY:
     def __init__(self, long, lat, view: str = "midday") -> None:
         """
         ClearOutsideAPI(long: str/float, lat: str/float, view: str = "midday")

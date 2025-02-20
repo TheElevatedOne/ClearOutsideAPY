@@ -1,2 +1,0 @@
-__init__
-clear_outside_apy
