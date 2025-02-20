@@ -170,8 +170,9 @@ class ClearOutsideAPY:
                         "feels-like": details_raw[12][c],
                         "dew-point": details_raw[13][c],
                     },
-                    "pressure": details_raw[14][c],
-                    "ozone": details_raw[15][c],
+                    "rel-humidity": details_raw[14][c],
+                    "pressure": details_raw[15][c],
+                    "ozone": details_raw[16][c],
                 }
             day = {"date": date, "sun": sunlight, "moon": moon, "hours": hours}
 
