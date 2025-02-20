@@ -3,15 +3,18 @@ from bs4 import BeautifulSoup
 
 
 class ClearOutsideAPY:
-    def __init__(self, long, lat, view: str = "midday") -> None:
+    def __init__(self, long: str, lat: str, view: str = "midday") -> None:
         """
-        ClearOutsideAPI(long: str/float, lat: str/float, view: str = "midday")
-        long - longitude
-        lat - latitude
+        ClearOutsideAPI(long: str, lat: str, view: str = "midday")
+        long - longitude with 2 decimal places
+        lat - latitude with 2 decimal places
         view: "current" for current hour at the beginning
               "midday" for midday at the beginning
               "midnight" for midnight at the beginning
         """
+        if len(long) < 4 or len(lat) < 4:
+            raise SystemExit("Parameter long or lat is badly specified")
+
         self.url = f"https://clearoutside.com/forecast/{long}/{lat}?view={view}"
         request = requests.get(self.url)
         self.soup = BeautifulSoup(request.content, "html5lib")
