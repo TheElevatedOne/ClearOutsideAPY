@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "bs4", "html5lib", "requests"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clear_outside_apy"
+version = "1.0.0"
+authors = [
+  { name="ELEVATED", email="admin@elevated.ovh" },
+]
+description = "Webscraper and parser for clearoutside.com"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/TheElevatedOne/ClearOutsideAPY"
+Issues = "https://github.com/TheElevatedOne/ClearOutsideAPY/issues"
