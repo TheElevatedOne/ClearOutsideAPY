@@ -59,6 +59,8 @@ Showing a piece of resulting dictionary in json format.
 
 The entire dictionary is around 4000 lines long in json format as it shows 17 types of information per hour in a day for 24 hours and 7 days.
 
+If you want to see the entire file for some unknown reason, go here [example/example-result.json](https://github.com/TheElevatedOne/ClearOutsideAPY/blob/main/example/example-result.json).
+
 ```json
 {
     "gen-info": {
