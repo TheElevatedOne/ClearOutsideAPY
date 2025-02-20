@@ -1,0 +1,4493 @@
+{
+    "gen-info": {
+        "last-gen": {
+            "date": "19/02/25",
+            "time": "20:26:52"
+        },
+        "forecast": {
+            "from-day": "19/02/25",
+            "to-day": "25/02/25"
+        },
+        "timezone": "UTC-5.00"
+    },
+    "sky-quality": {
+        "magnitude": "21.3",
+        "bortle_class": "4",
+        "brightness": [
+            "0.33",
+            "mcd/m2"
+        ],
+        "artif-brightness": [
+            "155.5",
+            "cd/m2"
+        ]
+    },
+    "forecast": {
+        "day-0": {
+            "date": {
+                "long": "Wednesday",
+                "short": "19"
+            },
+            "sun": {
+                "rise": "06:51",
+                "set": "17:40",
+                "transit": "12:17",
+                "civil-dark": [
+                    "18:09",
+                    "06:22"
+                ],
+                "nautical-dark": [
+                    "18:42",
+                    "05:49"
+                ],
+                "astro-dark": [
+                    "19:15",
+                    "05:16"
+                ]
+            },
+            "moon": {
+                "rise": "01:12",
+                "set": "10:07",
+                "phase": {
+                    "name": "Waning Gibbous",
+                    "percentage": "53%"
+                },
+                "meridian": {
+                    "time": "05:43",
+                    "altitude": "21.6",
+                    "distance": "401365.57"
+                }
+            },
+            "hours": {
+                "12": {
+                    "conditions": "bad",
+                    "total-clouds": "91",
+                    "low-clouds": "90",
+                    "mid-clouds": "13",
+                    "high-clouds": "18",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "0",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "17.7",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-14",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "74",
+                    "pressure": "1028",
+                    "ozone": "375"
+                },
+                "13": {
+                    "conditions": "bad",
+                    "total-clouds": "88",
+                    "low-clouds": "87",
+                    "mid-clouds": "24",
+                    "high-clouds": "40",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "0",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "17.7",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-14",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "73",
+                    "pressure": "1027",
+                    "ozone": "372"
+                },
+                "14": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "95",
+                    "mid-clouds": "24",
+                    "high-clouds": "35",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "100",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-13",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "74",
+                    "pressure": "1027",
+                    "ozone": "368"
+                },
+                "15": {
+                    "conditions": "bad",
+                    "total-clouds": "92",
+                    "low-clouds": "82",
+                    "mid-clouds": "60",
+                    "high-clouds": "32",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "0",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-13",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "74",
+                    "pressure": "1026",
+                    "ozone": "362"
+                },
+                "16": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "75",
+                    "mid-clouds": "100",
+                    "high-clouds": "20",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "0",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-13",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "75",
+                    "pressure": "1026",
+                    "ozone": "362"
+                },
+                "17": {
+                    "conditions": "bad",
+                    "total-clouds": "99",
+                    "low-clouds": "71",
+                    "mid-clouds": "96",
+                    "high-clouds": "4",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "0",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-14",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "79",
+                    "pressure": "1026",
+                    "ozone": "364"
+                },
+                "18": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "80",
+                    "mid-clouds": "85",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "100",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-10",
+                        "feels-like": "-14",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "84",
+                    "pressure": "1026",
+                    "ozone": "363"
+                },
+                "19": {
+                    "conditions": "bad",
+                    "total-clouds": "99",
+                    "low-clouds": "80",
+                    "mid-clouds": "93",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "100",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-11",
+                        "feels-like": "-15",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "87",
+                    "pressure": "1026",
+                    "ozone": "362"
+                },
+                "20": {
+                    "conditions": "bad",
+                    "total-clouds": "88",
+                    "low-clouds": "79",
+                    "mid-clouds": "88",
+                    "high-clouds": "0",
+                    "visibility": "12.87",
+                    "fog": "2",
+                    "prec-type": "none",
+                    "prec-probability": "0",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "north-north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-12",
+                        "feels-like": "-15",
+                        "dew-point": "-14"
+                    },
+                    "rel-humidity": "85",
+                    "pressure": "1026",
+                    "ozone": "362"
+                },
+                "21": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "71",
+                    "mid-clouds": "91",
+                    "high-clouds": "0",
+                    "visibility": "12.87",
+                    "fog": "3",
+                    "prec-type": "none",
+                    "prec-probability": "0",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "east-north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-13",
+                        "feels-like": "-17",
+                        "dew-point": "-15"
+                    },
+                    "rel-humidity": "83",
+                    "pressure": "1026",
+                    "ozone": "361"
+                },
+                "22": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "62",
+                    "mid-clouds": "84",
+                    "high-clouds": "1",
+                    "visibility": "11.27",
+                    "fog": "2",
+                    "prec-type": "none",
+                    "prec-probability": "0",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-14",
+                        "feels-like": "-17",
+                        "dew-point": "-16"
+                    },
+                    "rel-humidity": "83",
+                    "pressure": "1026",
+                    "ozone": "359"
+                },
+                "23": {
+                    "conditions": "bad",
+                    "total-clouds": "82",
+                    "low-clouds": "2",
+                    "mid-clouds": "81",
+                    "high-clouds": "26",
+                    "visibility": "11.27",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "6",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "east-north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-17",
+                        "feels-like": "-20",
+                        "dew-point": "-19"
+                    },
+                    "rel-humidity": "82",
+                    "pressure": "1025",
+                    "ozone": "359"
+                },
+                "00": {
+                    "conditions": "bad",
+                    "total-clouds": "82",
+                    "low-clouds": "7",
+                    "mid-clouds": "69",
+                    "high-clouds": "36",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "5",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-17",
+                        "feels-like": "-21",
+                        "dew-point": "-19"
+                    },
+                    "rel-humidity": "82",
+                    "pressure": "1024",
+                    "ozone": "358"
+                },
+                "01": {
+                    "conditions": "bad",
+                    "total-clouds": "97",
+                    "low-clouds": "17",
+                    "mid-clouds": "78",
+                    "high-clouds": "91",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "4",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "east-north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-18",
+                        "feels-like": "-22",
+                        "dew-point": "-20"
+                    },
+                    "rel-humidity": "80",
+                    "pressure": "1024",
+                    "ozone": "359"
+                },
+                "02": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "8",
+                    "mid-clouds": "59",
+                    "high-clouds": "100",
+                    "visibility": "8.05",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "5",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "east-north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-17",
+                        "feels-like": "-22",
+                        "dew-point": "-20"
+                    },
+                    "rel-humidity": "81",
+                    "pressure": "1023",
+                    "ozone": "361"
+                },
+                "03": {
+                    "conditions": "bad",
+                    "total-clouds": "89",
+                    "low-clouds": "48",
+                    "mid-clouds": "37",
+                    "high-clouds": "52",
+                    "visibility": "8.05",
+                    "fog": "27",
+                    "prec-type": "none",
+                    "prec-probability": "4",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "east-north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-19",
+                        "feels-like": "-23",
+                        "dew-point": "-22"
+                    },
+                    "rel-humidity": "80",
+                    "pressure": "1023",
+                    "ozone": "362"
+                },
+                "04": {
+                    "conditions": "bad",
+                    "total-clouds": "92",
+                    "low-clouds": "71",
+                    "mid-clouds": "42",
+                    "high-clouds": "30",
+                    "visibility": "4.83",
+                    "fog": "27",
+                    "prec-type": "none",
+                    "prec-probability": "2",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "east-north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-20",
+                        "feels-like": "-24",
+                        "dew-point": "-23"
+                    },
+                    "rel-humidity": "80",
+                    "pressure": "1022",
+                    "ozone": "360"
+                },
+                "05": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "80",
+                    "mid-clouds": "44",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "27",
+                    "prec-type": "none",
+                    "prec-probability": "4",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "east-north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-21",
+                        "feels-like": "-25",
+                        "dew-point": "-23"
+                    },
+                    "rel-humidity": "77",
+                    "pressure": "1022",
+                    "ozone": "367"
+                },
+                "06": {
+                    "conditions": "bad",
+                    "total-clouds": "91",
+                    "low-clouds": "77",
+                    "mid-clouds": "46",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "27",
+                    "prec-type": "none",
+                    "prec-probability": "11",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "east-north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-21",
+                        "feels-like": "-26",
+                        "dew-point": "-24"
+                    },
+                    "rel-humidity": "78",
+                    "pressure": "1021",
+                    "ozone": "381"
+                },
+                "07": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "73",
+                    "mid-clouds": "66",
+                    "high-clouds": "0",
+                    "visibility": "1.61",
+                    "fog": "27",
+                    "prec-type": "none",
+                    "prec-probability": "4",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-23",
+                        "feels-like": "-26",
+                        "dew-point": "-25"
+                    },
+                    "rel-humidity": "78",
+                    "pressure": "1021",
+                    "ozone": "393"
+                },
+                "08": {
+                    "conditions": "bad",
+                    "total-clouds": "84",
+                    "low-clouds": "74",
+                    "mid-clouds": "45",
+                    "high-clouds": "17",
+                    "visibility": "0.0",
+                    "fog": "27",
+                    "prec-type": "none",
+                    "prec-probability": "16",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-19",
+                        "feels-like": "-23",
+                        "dew-point": "-22"
+                    },
+                    "rel-humidity": "82",
+                    "pressure": "1021",
+                    "ozone": "402"
+                },
+                "09": {
+                    "conditions": "bad",
+                    "total-clouds": "81",
+                    "low-clouds": "76",
+                    "mid-clouds": "40",
+                    "high-clouds": "45",
+                    "visibility": "1.61",
+                    "fog": "27",
+                    "prec-type": "none",
+                    "prec-probability": "15",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "south"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-16",
+                        "feels-like": "-19",
+                        "dew-point": "-18"
+                    },
+                    "rel-humidity": "85",
+                    "pressure": "1020",
+                    "ozone": "404"
+                },
+                "10": {
+                    "conditions": "bad",
+                    "total-clouds": "99",
+                    "low-clouds": "92",
+                    "mid-clouds": "83",
+                    "high-clouds": "40",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "20",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-13",
+                        "feels-like": "-17",
+                        "dew-point": "-15"
+                    },
+                    "rel-humidity": "84",
+                    "pressure": "1020",
+                    "ozone": "400"
+                },
+                "11": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "92",
+                    "mid-clouds": "40",
+                    "high-clouds": "39",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "15",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-11",
+                        "feels-like": "-15",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "86",
+                    "pressure": "1019",
+                    "ozone": "397"
+                }
+            }
+        },
+        "day-1": {
+            "date": {
+                "long": "Thursday",
+                "short": "20"
+            },
+            "sun": {
+                "rise": "06:50",
+                "set": "17:42",
+                "transit": "12:16",
+                "civil-dark": [
+                    "18:10",
+                    "06:21"
+                ],
+                "nautical-dark": [
+                    "18:43",
+                    "05:48"
+                ],
+                "astro-dark": [
+                    "19:16",
+                    "05:15"
+                ]
+            },
+            "moon": {
+                "rise": "02:18",
+                "set": "10:44",
+                "phase": {
+                    "name": "Third Quarter",
+                    "percentage": "43%"
+                },
+                "meridian": {
+                    "time": "06:33",
+                    "altitude": "18.9",
+                    "distance": "397681.78"
+                }
+            },
+            "hours": {
+                "12": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "40",
+                    "high-clouds": "50",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "26",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-14",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "83",
+                    "pressure": "1018",
+                    "ozone": "395"
+                },
+                "13": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "87",
+                    "high-clouds": "58",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "25",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-13",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "82",
+                    "pressure": "1017",
+                    "ozone": "396"
+                },
+                "14": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "91",
+                    "mid-clouds": "100",
+                    "high-clouds": "62",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "36",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-13",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "82",
+                    "pressure": "1017",
+                    "ozone": "398"
+                },
+                "15": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "89",
+                    "mid-clouds": "100",
+                    "high-clouds": "48",
+                    "visibility": "1.61",
+                    "fog": "1",
+                    "prec-type": "none",
+                    "prec-probability": "30",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "17.7",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-14",
+                        "dew-point": "-10"
+                    },
+                    "rel-humidity": "85",
+                    "pressure": "1017",
+                    "ozone": "397"
+                },
+                "16": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "87",
+                    "mid-clouds": "100",
+                    "high-clouds": "57",
+                    "visibility": "3.22",
+                    "fog": "2",
+                    "prec-type": "none",
+                    "prec-probability": "33",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "17.7",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-14",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "85",
+                    "pressure": "1017",
+                    "ozone": "393"
+                },
+                "17": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "86",
+                    "mid-clouds": "100",
+                    "high-clouds": "63",
+                    "visibility": "11.27",
+                    "fog": "2",
+                    "prec-type": "none",
+                    "prec-probability": "30",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-14",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "85",
+                    "pressure": "1017",
+                    "ozone": "391"
+                },
+                "18": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "86",
+                    "mid-clouds": "100",
+                    "high-clouds": "42",
+                    "visibility": "8.05",
+                    "fog": "2",
+                    "prec-type": "none",
+                    "prec-probability": "31",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-10",
+                        "feels-like": "-14",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "87",
+                    "pressure": "1018",
+                    "ozone": "391"
+                },
+                "19": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "91",
+                    "mid-clouds": "85",
+                    "high-clouds": "10",
+                    "visibility": "1.61",
+                    "fog": "1",
+                    "prec-type": "none",
+                    "prec-probability": "35",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-10",
+                        "feels-like": "-14",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1018",
+                    "ozone": "394"
+                },
+                "20": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "81",
+                    "high-clouds": "13",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "38",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-11",
+                        "feels-like": "-14",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1018",
+                    "ozone": "394"
+                },
+                "21": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "79",
+                    "high-clouds": "10",
+                    "visibility": "3.22",
+                    "fog": "1",
+                    "prec-type": "snow",
+                    "prec-probability": "42",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-11",
+                        "feels-like": "-15",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1018",
+                    "ozone": "393"
+                },
+                "22": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "79",
+                    "mid-clouds": "76",
+                    "high-clouds": "9",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "35",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-10",
+                        "feels-like": "-14",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "92",
+                    "pressure": "1019",
+                    "ozone": "387"
+                },
+                "23": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "77",
+                    "mid-clouds": "84",
+                    "high-clouds": "14",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "29",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-14",
+                        "dew-point": "-10"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1019",
+                    "ozone": "383"
+                },
+                "00": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "79",
+                    "mid-clouds": "88",
+                    "high-clouds": "5",
+                    "visibility": "8.05",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "28",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-14",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "87",
+                    "pressure": "1019",
+                    "ozone": "378"
+                },
+                "01": {
+                    "conditions": "bad",
+                    "total-clouds": "93",
+                    "low-clouds": "80",
+                    "mid-clouds": "67",
+                    "high-clouds": "1",
+                    "visibility": "9.66",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "29",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-10",
+                        "feels-like": "-15",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "87",
+                    "pressure": "1020",
+                    "ozone": "372"
+                },
+                "02": {
+                    "conditions": "bad",
+                    "total-clouds": "89",
+                    "low-clouds": "83",
+                    "mid-clouds": "8",
+                    "high-clouds": "0",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "29",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-10",
+                        "feels-like": "-16",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "85",
+                    "pressure": "1020",
+                    "ozone": "370"
+                },
+                "03": {
+                    "conditions": "bad",
+                    "total-clouds": "88",
+                    "low-clouds": "87",
+                    "mid-clouds": "0",
+                    "high-clouds": "1",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "32",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-11",
+                        "feels-like": "-16",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "86",
+                    "pressure": "1021",
+                    "ozone": "371"
+                },
+                "04": {
+                    "conditions": "bad",
+                    "total-clouds": "85",
+                    "low-clouds": "83",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "30",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-11",
+                        "feels-like": "-17",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "86",
+                    "pressure": "1022",
+                    "ozone": "371"
+                },
+                "05": {
+                    "conditions": "bad",
+                    "total-clouds": "86",
+                    "low-clouds": "82",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "28",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-12",
+                        "feels-like": "-17",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "86",
+                    "pressure": "1023",
+                    "ozone": "371"
+                },
+                "06": {
+                    "conditions": "bad",
+                    "total-clouds": "88",
+                    "low-clouds": "86",
+                    "mid-clouds": "1",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "28",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-12",
+                        "feels-like": "-17",
+                        "dew-point": "-14"
+                    },
+                    "rel-humidity": "85",
+                    "pressure": "1023",
+                    "ozone": "374"
+                },
+                "07": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "89",
+                    "mid-clouds": "41",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "26",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-12",
+                        "feels-like": "-17",
+                        "dew-point": "-14"
+                    },
+                    "rel-humidity": "86",
+                    "pressure": "1024",
+                    "ozone": "376"
+                },
+                "08": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "87",
+                    "mid-clouds": "42",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "24",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-12",
+                        "feels-like": "-17",
+                        "dew-point": "-14"
+                    },
+                    "rel-humidity": "86",
+                    "pressure": "1025",
+                    "ozone": "375"
+                },
+                "09": {
+                    "conditions": "bad",
+                    "total-clouds": "93",
+                    "low-clouds": "90",
+                    "mid-clouds": "1",
+                    "high-clouds": "0",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "17",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "17.7",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-11",
+                        "feels-like": "-16",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "85",
+                    "pressure": "1026",
+                    "ozone": "374"
+                },
+                "10": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "94",
+                    "mid-clouds": "1",
+                    "high-clouds": "0",
+                    "visibility": "9.66",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "17",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "19.31",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-10",
+                        "feels-like": "-16",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "81",
+                    "pressure": "1026",
+                    "ozone": "369"
+                },
+                "11": {
+                    "conditions": "bad",
+                    "total-clouds": "92",
+                    "low-clouds": "90",
+                    "mid-clouds": "1",
+                    "high-clouds": "0",
+                    "visibility": "14.48",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "11",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "19.31",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-15",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "80",
+                    "pressure": "1027",
+                    "ozone": "370"
+                }
+            }
+        },
+        "day-2": {
+            "date": {
+                "long": "Friday",
+                "short": "21"
+            },
+            "sun": {
+                "rise": "06:48",
+                "set": "17:43",
+                "transit": "12:16",
+                "civil-dark": [
+                    "18:12",
+                    "06:19"
+                ],
+                "nautical-dark": [
+                    "18:45",
+                    "05:46"
+                ],
+                "astro-dark": [
+                    "19:18",
+                    "05:13"
+                ]
+            },
+            "moon": {
+                "rise": "03:20",
+                "set": "11:32",
+                "phase": {
+                    "name": "Waning Crescent",
+                    "percentage": "33%"
+                },
+                "meridian": {
+                    "time": "07:27",
+                    "altitude": "17.5",
+                    "distance": "392869.84"
+                }
+            },
+            "hours": {
+                "12": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "93",
+                    "mid-clouds": "1",
+                    "high-clouds": "0",
+                    "visibility": "14.48",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "9",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "20.92",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-14",
+                        "dew-point": "-12"
+                    },
+                    "rel-humidity": "78",
+                    "pressure": "1027",
+                    "ozone": "369"
+                },
+                "13": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "92",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "14.48",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "13",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "20.92",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-14",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "78",
+                    "pressure": "1027",
+                    "ozone": "364"
+                },
+                "14": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "95",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "14.48",
+                    "fog": "1",
+                    "prec-type": "none",
+                    "prec-probability": "17",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "20.92",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-14",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "79",
+                    "pressure": "1027",
+                    "ozone": "362"
+                },
+                "15": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "8.05",
+                    "fog": "1",
+                    "prec-type": "none",
+                    "prec-probability": "22",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "20.92",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-14",
+                        "dew-point": "-10"
+                    },
+                    "rel-humidity": "80",
+                    "pressure": "1027",
+                    "ozone": "362"
+                },
+                "16": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "6.44",
+                    "fog": "2",
+                    "prec-type": "none",
+                    "prec-probability": "15",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "19.31",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-13",
+                        "dew-point": "-10"
+                    },
+                    "rel-humidity": "83",
+                    "pressure": "1028",
+                    "ozone": "364"
+                },
+                "17": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "95",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "14.48",
+                    "fog": "2",
+                    "prec-type": "none",
+                    "prec-probability": "24",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-13",
+                        "dew-point": "-10"
+                    },
+                    "rel-humidity": "85",
+                    "pressure": "1028",
+                    "ozone": "365"
+                },
+                "18": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "94",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "11.27",
+                    "fog": "2",
+                    "prec-type": "none",
+                    "prec-probability": "28",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-9",
+                        "feels-like": "-13",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1029",
+                    "ozone": "370"
+                },
+                "19": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "95",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "3",
+                    "prec-type": "none",
+                    "prec-probability": "28",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-11",
+                        "feels-like": "-15",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1029",
+                    "ozone": "377"
+                },
+                "20": {
+                    "conditions": "bad",
+                    "total-clouds": "90",
+                    "low-clouds": "86",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "1.61",
+                    "fog": "9",
+                    "prec-type": "none",
+                    "prec-probability": "25",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-12",
+                        "feels-like": "-15",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1029",
+                    "ozone": "378"
+                },
+                "21": {
+                    "conditions": "bad",
+                    "total-clouds": "87",
+                    "low-clouds": "82",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "20",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-12",
+                        "feels-like": "-15",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1030",
+                    "ozone": "381"
+                },
+                "22": {
+                    "conditions": "bad",
+                    "total-clouds": "71",
+                    "low-clouds": "58",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "20",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-12",
+                        "feels-like": "-16",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1030",
+                    "ozone": "378"
+                },
+                "23": {
+                    "conditions": "bad",
+                    "total-clouds": "77",
+                    "low-clouds": "60",
+                    "mid-clouds": "26",
+                    "high-clouds": "1",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "11",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-13",
+                        "feels-like": "-16",
+                        "dew-point": "-14"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1029",
+                    "ozone": "377"
+                },
+                "00": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "52",
+                    "mid-clouds": "86",
+                    "high-clouds": "40",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "10",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-13",
+                        "feels-like": "-17",
+                        "dew-point": "-14"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1029",
+                    "ozone": "387"
+                },
+                "01": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "72",
+                    "mid-clouds": "74",
+                    "high-clouds": "22",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "7",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-13",
+                        "feels-like": "-16",
+                        "dew-point": "-14"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1030",
+                    "ozone": "387"
+                },
+                "02": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "84",
+                    "mid-clouds": "48",
+                    "high-clouds": "50",
+                    "visibility": "0.0",
+                    "fog": "62",
+                    "prec-type": "none",
+                    "prec-probability": "21",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-13",
+                        "feels-like": "-17",
+                        "dew-point": "-15"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1030",
+                    "ozone": "387"
+                },
+                "03": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "97",
+                    "mid-clouds": "25",
+                    "high-clouds": "65",
+                    "visibility": "0.0",
+                    "fog": "97",
+                    "prec-type": "none",
+                    "prec-probability": "23",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-14",
+                        "feels-like": "-17",
+                        "dew-point": "-15"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1030",
+                    "ozone": "387"
+                },
+                "04": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "94",
+                    "mid-clouds": "64",
+                    "high-clouds": "80",
+                    "visibility": "1.61",
+                    "fog": "67",
+                    "prec-type": "none",
+                    "prec-probability": "28",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-13",
+                        "feels-like": "-16",
+                        "dew-point": "-14"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1030",
+                    "ozone": "384"
+                },
+                "05": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "88",
+                    "mid-clouds": "36",
+                    "high-clouds": "80",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "29",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-14",
+                        "feels-like": "-17",
+                        "dew-point": "-15"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1030",
+                    "ozone": "391"
+                },
+                "06": {
+                    "conditions": "bad",
+                    "total-clouds": "90",
+                    "low-clouds": "74",
+                    "mid-clouds": "35",
+                    "high-clouds": "85",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "20",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-14",
+                        "feels-like": "-18",
+                        "dew-point": "-16"
+                    },
+                    "rel-humidity": "86",
+                    "pressure": "1030",
+                    "ozone": "393"
+                },
+                "07": {
+                    "conditions": "bad",
+                    "total-clouds": "86",
+                    "low-clouds": "71",
+                    "mid-clouds": "35",
+                    "high-clouds": "18",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "15",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-13",
+                        "feels-like": "-17",
+                        "dew-point": "-15"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1030",
+                    "ozone": "386"
+                },
+                "08": {
+                    "conditions": "bad",
+                    "total-clouds": "86",
+                    "low-clouds": "69",
+                    "mid-clouds": "35",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "10",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-12",
+                        "feels-like": "-15",
+                        "dew-point": "-13"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1029",
+                    "ozone": "378"
+                },
+                "09": {
+                    "conditions": "bad",
+                    "total-clouds": "85",
+                    "low-clouds": "67",
+                    "mid-clouds": "19",
+                    "high-clouds": "0",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "10",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "1.61",
+                        "direction": "south"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-10",
+                        "feels-like": "-13",
+                        "dew-point": "-11"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1029",
+                    "ozone": "378"
+                },
+                "10": {
+                    "conditions": "bad",
+                    "total-clouds": "75",
+                    "low-clouds": "32",
+                    "mid-clouds": "2",
+                    "high-clouds": "0",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "7",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-11",
+                        "dew-point": "-9"
+                    },
+                    "rel-humidity": "88",
+                    "pressure": "1028",
+                    "ozone": "376"
+                },
+                "11": {
+                    "conditions": "bad",
+                    "total-clouds": "78",
+                    "low-clouds": "38",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "16",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-9",
+                        "dew-point": "-7"
+                    },
+                    "rel-humidity": "90",
+                    "pressure": "1027",
+                    "ozone": "370"
+                }
+            }
+        },
+        "day-3": {
+            "date": {
+                "long": "Saturday",
+                "short": "22"
+            },
+            "sun": {
+                "rise": "06:47",
+                "set": "17:44",
+                "transit": "12:16",
+                "civil-dark": [
+                    "18:13",
+                    "06:18"
+                ],
+                "nautical-dark": [
+                    "18:46",
+                    "05:45"
+                ],
+                "astro-dark": [
+                    "19:19",
+                    "05:12"
+                ]
+            },
+            "moon": {
+                "rise": "<strong>Rise:</strong>",
+                "set": "<strong>Set:</strong>",
+                "phase": {
+                    "name": "Waning Crescent",
+                    "percentage": "23%"
+                },
+                "meridian": {
+                    "time": "08:23",
+                    "altitude": "17.6",
+                    "distance": "387225.87"
+                }
+            },
+            "hours": {
+                "12": {
+                    "conditions": "bad",
+                    "total-clouds": "77",
+                    "low-clouds": "19",
+                    "mid-clouds": "0",
+                    "high-clouds": "4",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "19",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-4",
+                        "feels-like": "-8",
+                        "dew-point": "-5"
+                    },
+                    "rel-humidity": "87",
+                    "pressure": "1026",
+                    "ozone": "367"
+                },
+                "13": {
+                    "conditions": "bad",
+                    "total-clouds": "83",
+                    "low-clouds": "20",
+                    "mid-clouds": "9",
+                    "high-clouds": "15",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "17",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-3",
+                        "feels-like": "-7",
+                        "dew-point": "-5"
+                    },
+                    "rel-humidity": "86",
+                    "pressure": "1025",
+                    "ozone": "367"
+                },
+                "14": {
+                    "conditions": "bad",
+                    "total-clouds": "88",
+                    "low-clouds": "21",
+                    "mid-clouds": "16",
+                    "high-clouds": "23",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "8",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-6",
+                        "dew-point": "-4"
+                    },
+                    "rel-humidity": "84",
+                    "pressure": "1024",
+                    "ozone": "365"
+                },
+                "15": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "22",
+                    "mid-clouds": "63",
+                    "high-clouds": "24",
+                    "visibility": "11.27",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "12",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-1",
+                        "feels-like": "-6",
+                        "dew-point": "-4"
+                    },
+                    "rel-humidity": "83",
+                    "pressure": "1023",
+                    "ozone": "365"
+                },
+                "16": {
+                    "conditions": "bad",
+                    "total-clouds": "97",
+                    "low-clouds": "15",
+                    "mid-clouds": "59",
+                    "high-clouds": "34",
+                    "visibility": "14.48",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "14",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-1",
+                        "feels-like": "-5",
+                        "dew-point": "-3"
+                    },
+                    "rel-humidity": "84",
+                    "pressure": "1022",
+                    "ozone": "365"
+                },
+                "17": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "7",
+                    "mid-clouds": "85",
+                    "high-clouds": "39",
+                    "visibility": "14.48",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "3",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-1",
+                        "feels-like": "-4",
+                        "dew-point": "-3"
+                    },
+                    "rel-humidity": "86",
+                    "pressure": "1022",
+                    "ozone": "364"
+                },
+                "18": {
+                    "conditions": "bad",
+                    "total-clouds": "97",
+                    "low-clouds": "0",
+                    "mid-clouds": "88",
+                    "high-clouds": "66",
+                    "visibility": "14.48",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "3",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-3",
+                        "feels-like": "-6",
+                        "dew-point": "-4"
+                    },
+                    "rel-humidity": "91",
+                    "pressure": "1022",
+                    "ozone": "368"
+                },
+                "19": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "0",
+                    "mid-clouds": "57",
+                    "high-clouds": "100",
+                    "visibility": "14.48",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "3",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-4",
+                        "feels-like": "-7",
+                        "dew-point": "-5"
+                    },
+                    "rel-humidity": "92",
+                    "pressure": "1022",
+                    "ozone": "374"
+                },
+                "20": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "0",
+                    "mid-clouds": "95",
+                    "high-clouds": "100",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "0",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "south-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-8",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "92",
+                    "pressure": "1022",
+                    "ozone": "375"
+                },
+                "21": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "0",
+                    "mid-clouds": "100",
+                    "high-clouds": "100",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "2",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-8",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "92",
+                    "pressure": "1021",
+                    "ozone": "374"
+                },
+                "22": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "15",
+                    "mid-clouds": "100",
+                    "high-clouds": "100",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "8",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-6",
+                        "feels-like": "-9",
+                        "dew-point": "-7"
+                    },
+                    "rel-humidity": "94",
+                    "pressure": "1021",
+                    "ozone": "373"
+                },
+                "23": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "33",
+                    "mid-clouds": "100",
+                    "high-clouds": "100",
+                    "visibility": "8.05",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "12",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-6",
+                        "feels-like": "-9",
+                        "dew-point": "-7"
+                    },
+                    "rel-humidity": "94",
+                    "pressure": "1021",
+                    "ozone": "371"
+                },
+                "00": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "47",
+                    "mid-clouds": "100",
+                    "high-clouds": "100",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "22",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-6",
+                        "feels-like": "-8",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "94",
+                    "pressure": "1020",
+                    "ozone": "374"
+                },
+                "01": {
+                    "conditions": "bad",
+                    "total-clouds": "99",
+                    "low-clouds": "62",
+                    "mid-clouds": "97",
+                    "high-clouds": "70",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "42",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "north-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-6",
+                        "feels-like": "-9",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "94",
+                    "pressure": "1020",
+                    "ozone": "378"
+                },
+                "02": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "75",
+                    "mid-clouds": "93",
+                    "high-clouds": "32",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "49",
+                    "prec-amount": "0.2",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "south-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-8",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1020",
+                    "ozone": "373"
+                },
+                "03": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "88",
+                    "mid-clouds": "90",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "48",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-9",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1019",
+                    "ozone": "367"
+                },
+                "04": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "86",
+                    "mid-clouds": "90",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "52",
+                    "prec-amount": "0.2",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-9",
+                        "dew-point": "-5"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1019",
+                    "ozone": "365"
+                },
+                "05": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "85",
+                    "mid-clouds": "86",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "56",
+                    "prec-amount": "0.2",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-10",
+                        "dew-point": "-5"
+                    },
+                    "rel-humidity": "94",
+                    "pressure": "1019",
+                    "ozone": "369"
+                },
+                "06": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "85",
+                    "mid-clouds": "73",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "58",
+                    "prec-amount": "0.2",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-9",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "92",
+                    "pressure": "1019",
+                    "ozone": "373"
+                },
+                "07": {
+                    "conditions": "bad",
+                    "total-clouds": "97",
+                    "low-clouds": "85",
+                    "mid-clouds": "63",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "54",
+                    "prec-amount": "0.2",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-10",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "94",
+                    "pressure": "1019",
+                    "ozone": "375"
+                },
+                "08": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "85",
+                    "mid-clouds": "51",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "49",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-4",
+                        "feels-like": "-9",
+                        "dew-point": "-5"
+                    },
+                    "rel-humidity": "92",
+                    "pressure": "1019",
+                    "ozone": "375"
+                },
+                "09": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "85",
+                    "mid-clouds": "42",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "46",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-4",
+                        "feels-like": "-8",
+                        "dew-point": "-4"
+                    },
+                    "rel-humidity": "94",
+                    "pressure": "1019",
+                    "ozone": "376"
+                },
+                "10": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "88",
+                    "mid-clouds": "26",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "42",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-3",
+                        "feels-like": "-8",
+                        "dew-point": "-4"
+                    },
+                    "rel-humidity": "89",
+                    "pressure": "1020",
+                    "ozone": "381"
+                },
+                "11": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "90",
+                    "mid-clouds": "13",
+                    "high-clouds": "0",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "41",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-8",
+                        "dew-point": "-4"
+                    },
+                    "rel-humidity": "89",
+                    "pressure": "1020",
+                    "ozone": "385"
+                }
+            }
+        },
+        "day-4": {
+            "date": {
+                "long": "Sunday",
+                "short": "23"
+            },
+            "sun": {
+                "rise": "06:45",
+                "set": "17:46",
+                "transit": "12:16",
+                "civil-dark": [
+                    "18:14",
+                    "06:16"
+                ],
+                "nautical-dark": [
+                    "18:47",
+                    "05:43"
+                ],
+                "astro-dark": [
+                    "19:20",
+                    "05:10"
+                ]
+            },
+            "moon": {
+                "rise": "05:05",
+                "set": "12:31",
+                "phase": {
+                    "name": "Waning Crescent",
+                    "percentage": "15%"
+                },
+                "meridian": {
+                    "time": "09:20",
+                    "altitude": "19.5",
+                    "distance": "381171.52"
+                }
+            },
+            "hours": {
+                "12": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "93",
+                    "mid-clouds": "0",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "41",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-7",
+                        "dew-point": "-3"
+                    },
+                    "rel-humidity": "89",
+                    "pressure": "1019",
+                    "ozone": "382"
+                },
+                "13": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "93",
+                    "mid-clouds": "2",
+                    "high-clouds": "0",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "38",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-1",
+                        "feels-like": "-6",
+                        "dew-point": "-3"
+                    },
+                    "rel-humidity": "87",
+                    "pressure": "1019",
+                    "ozone": "381"
+                },
+                "14": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "93",
+                    "mid-clouds": "2",
+                    "high-clouds": "0",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "33",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-6",
+                        "dew-point": "-3"
+                    },
+                    "rel-humidity": "89",
+                    "pressure": "1019",
+                    "ozone": "379"
+                },
+                "15": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "93",
+                    "mid-clouds": "2",
+                    "high-clouds": "2",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "28",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-6",
+                        "dew-point": "-3"
+                    },
+                    "rel-humidity": "91",
+                    "pressure": "1019",
+                    "ozone": "379"
+                },
+                "16": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "94",
+                    "mid-clouds": "40",
+                    "high-clouds": "5",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "21",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-5",
+                        "dew-point": "-3"
+                    },
+                    "rel-humidity": "91",
+                    "pressure": "1020",
+                    "ozone": "379"
+                },
+                "17": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "94",
+                    "mid-clouds": "50",
+                    "high-clouds": "5",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "15",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-5",
+                        "dew-point": "-3"
+                    },
+                    "rel-humidity": "94",
+                    "pressure": "1020",
+                    "ozone": "381"
+                },
+                "18": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "95",
+                    "mid-clouds": "55",
+                    "high-clouds": "10",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "10",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-3",
+                        "feels-like": "-6",
+                        "dew-point": "-4"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1021",
+                    "ozone": "383"
+                },
+                "19": {
+                    "conditions": "bad",
+                    "total-clouds": "87",
+                    "low-clouds": "80",
+                    "mid-clouds": "55",
+                    "high-clouds": "10",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "9",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-4",
+                        "feels-like": "-6",
+                        "dew-point": "-4"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1021",
+                    "ozone": "382"
+                },
+                "20": {
+                    "conditions": "bad",
+                    "total-clouds": "79",
+                    "low-clouds": "64",
+                    "mid-clouds": "55",
+                    "high-clouds": "10",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "15",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "south-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-4",
+                        "feels-like": "-7",
+                        "dew-point": "-5"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1021",
+                    "ozone": "380"
+                },
+                "21": {
+                    "conditions": "bad",
+                    "total-clouds": "68",
+                    "low-clouds": "46",
+                    "mid-clouds": "55",
+                    "high-clouds": "20",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "15",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-5",
+                        "feels-like": "-7",
+                        "dew-point": "-5"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1021",
+                    "ozone": "382"
+                },
+                "22": {
+                    "conditions": "bad",
+                    "total-clouds": "48",
+                    "low-clouds": "31",
+                    "mid-clouds": "48",
+                    "high-clouds": "25",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "14",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-6",
+                        "feels-like": "-9",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1021",
+                    "ozone": "384"
+                },
+                "23": {
+                    "conditions": "bad",
+                    "total-clouds": "32",
+                    "low-clouds": "15",
+                    "mid-clouds": "22",
+                    "high-clouds": "25",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "14",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-6",
+                        "feels-like": "-9",
+                        "dew-point": "-7"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1021",
+                    "ozone": "384"
+                },
+                "00": {
+                    "conditions": "bad",
+                    "total-clouds": "20",
+                    "low-clouds": "0",
+                    "mid-clouds": "5",
+                    "high-clouds": "20",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "17",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "3.22",
+                        "direction": "south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-6",
+                        "feels-like": "-10",
+                        "dew-point": "-7"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1021",
+                    "ozone": "382"
+                },
+                "01": {
+                    "conditions": "bad",
+                    "total-clouds": "40",
+                    "low-clouds": "33",
+                    "mid-clouds": "5",
+                    "high-clouds": "40",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "15",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-7",
+                        "feels-like": "-10",
+                        "dew-point": "-7"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1020",
+                    "ozone": "382"
+                },
+                "02": {
+                    "conditions": "bad",
+                    "total-clouds": "70",
+                    "low-clouds": "67",
+                    "mid-clouds": "16",
+                    "high-clouds": "50",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "13",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-7",
+                        "feels-like": "-11",
+                        "dew-point": "-8"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1020",
+                    "ozone": "382"
+                },
+                "03": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "45",
+                    "high-clouds": "60",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "14",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "4.83",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-11",
+                        "dew-point": "-8"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1020",
+                    "ozone": "388"
+                },
+                "04": {
+                    "conditions": "bad",
+                    "total-clouds": "90",
+                    "low-clouds": "89",
+                    "mid-clouds": "40",
+                    "high-clouds": "65",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "5",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-12",
+                        "dew-point": "-9"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1020",
+                    "ozone": "384"
+                },
+                "05": {
+                    "conditions": "bad",
+                    "total-clouds": "80",
+                    "low-clouds": "78",
+                    "mid-clouds": "45",
+                    "high-clouds": "70",
+                    "visibility": "8.05",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "4",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-12",
+                        "dew-point": "-9"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1019",
+                    "ozone": "378"
+                },
+                "06": {
+                    "conditions": "bad",
+                    "total-clouds": "71",
+                    "low-clouds": "67",
+                    "mid-clouds": "45",
+                    "high-clouds": "70",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "10",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-8",
+                        "feels-like": "-11",
+                        "dew-point": "-8"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1019",
+                    "ozone": "379"
+                },
+                "07": {
+                    "conditions": "bad",
+                    "total-clouds": "76",
+                    "low-clouds": "62",
+                    "mid-clouds": "53",
+                    "high-clouds": "65",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "9",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-7",
+                        "feels-like": "-11",
+                        "dew-point": "-8"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1018",
+                    "ozone": "381"
+                },
+                "08": {
+                    "conditions": "bad",
+                    "total-clouds": "82",
+                    "low-clouds": "56",
+                    "mid-clouds": "62",
+                    "high-clouds": "69",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "6",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-6",
+                        "feels-like": "-10",
+                        "dew-point": "-6"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1018",
+                    "ozone": "378"
+                },
+                "09": {
+                    "conditions": "bad",
+                    "total-clouds": "86",
+                    "low-clouds": "50",
+                    "mid-clouds": "74",
+                    "high-clouds": "72",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "2",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-4",
+                        "feels-like": "-9",
+                        "dew-point": "-4"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1017",
+                    "ozone": "375"
+                },
+                "10": {
+                    "conditions": "bad",
+                    "total-clouds": "90",
+                    "low-clouds": "34",
+                    "mid-clouds": "64",
+                    "high-clouds": "57",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "9",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-9",
+                        "dew-point": "-2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1017",
+                    "ozone": "373"
+                },
+                "11": {
+                    "conditions": "bad",
+                    "total-clouds": "93",
+                    "low-clouds": "17",
+                    "mid-clouds": "46",
+                    "high-clouds": "47",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "12",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-1",
+                        "feels-like": "-7",
+                        "dew-point": "-1"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1016",
+                    "ozone": "370"
+                }
+            }
+        },
+        "day-5": {
+            "date": {
+                "long": "Monday",
+                "short": "24"
+            },
+            "sun": {
+                "rise": "06:43",
+                "set": "17:47",
+                "transit": "12:16",
+                "civil-dark": [
+                    "18:15",
+                    "06:15"
+                ],
+                "nautical-dark": [
+                    "18:48",
+                    "05:42"
+                ],
+                "astro-dark": [
+                    "19:21",
+                    "05:09"
+                ]
+            },
+            "moon": {
+                "rise": "05:44",
+                "set": "13:40",
+                "phase": {
+                    "name": "Waning Crescent",
+                    "percentage": "8%"
+                },
+                "meridian": {
+                    "time": "10:16",
+                    "altitude": "23.1",
+                    "distance": "375216.94"
+                }
+            },
+            "hours": {
+                "12": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "0",
+                    "mid-clouds": "29",
+                    "high-clouds": "49",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "9",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-5",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1014",
+                    "ozone": "367"
+                },
+                "13": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "2",
+                    "mid-clouds": "28",
+                    "high-clouds": "41",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "19",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "4",
+                        "feels-like": "-3",
+                        "dew-point": "4"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1013",
+                    "ozone": "364"
+                },
+                "14": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "5",
+                    "mid-clouds": "31",
+                    "high-clouds": "28",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "24",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "4",
+                        "feels-like": "1",
+                        "dew-point": "4"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1012",
+                    "ozone": "365"
+                },
+                "15": {
+                    "conditions": "bad",
+                    "total-clouds": "96",
+                    "low-clouds": "7",
+                    "mid-clouds": "35",
+                    "high-clouds": "8",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "23",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "4",
+                        "feels-like": "1",
+                        "dew-point": "4"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1012",
+                    "ozone": "365"
+                },
+                "16": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "26",
+                    "mid-clouds": "49",
+                    "high-clouds": "11",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "33",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "5",
+                        "feels-like": "2",
+                        "dew-point": "5"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1011",
+                    "ozone": "366"
+                },
+                "17": {
+                    "conditions": "bad",
+                    "total-clouds": "95",
+                    "low-clouds": "44",
+                    "mid-clouds": "66",
+                    "high-clouds": "15",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "37",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "16.09",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "4",
+                        "feels-like": "1",
+                        "dew-point": "4"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1010",
+                    "ozone": "369"
+                },
+                "18": {
+                    "conditions": "bad",
+                    "total-clouds": "94",
+                    "low-clouds": "63",
+                    "mid-clouds": "80",
+                    "high-clouds": "14",
+                    "visibility": "3.22",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "29",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "3",
+                        "feels-like": "1",
+                        "dew-point": "3"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1010",
+                    "ozone": "372"
+                },
+                "19": {
+                    "conditions": "bad",
+                    "total-clouds": "90",
+                    "low-clouds": "52",
+                    "mid-clouds": "83",
+                    "high-clouds": "4",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "24",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "3",
+                        "feels-like": "0",
+                        "dew-point": "3"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1010",
+                    "ozone": "374"
+                },
+                "20": {
+                    "conditions": "bad",
+                    "total-clouds": "86",
+                    "low-clouds": "41",
+                    "mid-clouds": "86",
+                    "high-clouds": "7",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "31",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "east-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "3",
+                        "feels-like": "-1",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1009",
+                    "ozone": "381"
+                },
+                "21": {
+                    "conditions": "bad",
+                    "total-clouds": "83",
+                    "low-clouds": "29",
+                    "mid-clouds": "83",
+                    "high-clouds": "11",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "40",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1008",
+                    "ozone": "388"
+                },
+                "22": {
+                    "conditions": "bad",
+                    "total-clouds": "91",
+                    "low-clouds": "53",
+                    "mid-clouds": "91",
+                    "high-clouds": "46",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "very-light-rain",
+                    "prec-probability": "61",
+                    "prec-amount": "0.3",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-3",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1008",
+                    "ozone": "394"
+                },
+                "23": {
+                    "conditions": "bad",
+                    "total-clouds": "97",
+                    "low-clouds": "76",
+                    "mid-clouds": "97",
+                    "high-clouds": "71",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "light-rain",
+                    "prec-probability": "71",
+                    "prec-amount": "0.4",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1007",
+                    "ozone": "393"
+                },
+                "00": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "100",
+                    "high-clouds": "95",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "65",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "south-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1006",
+                    "ozone": "392"
+                },
+                "01": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "95",
+                    "mid-clouds": "100",
+                    "high-clouds": "96",
+                    "visibility": "6.44",
+                    "fog": "0",
+                    "prec-type": "very-light-rain",
+                    "prec-probability": "63",
+                    "prec-amount": "0.2",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "south-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1005",
+                    "ozone": "391"
+                },
+                "02": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "90",
+                    "mid-clouds": "100",
+                    "high-clouds": "97",
+                    "visibility": "4.83",
+                    "fog": "0",
+                    "prec-type": "very-light-rain",
+                    "prec-probability": "60",
+                    "prec-amount": "0.3",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "south-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1005",
+                    "ozone": "396"
+                },
+                "03": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "86",
+                    "mid-clouds": "100",
+                    "high-clouds": "98",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "48",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "south-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1004",
+                    "ozone": "401"
+                },
+                "04": {
+                    "conditions": "bad",
+                    "total-clouds": "99",
+                    "low-clouds": "86",
+                    "mid-clouds": "98",
+                    "high-clouds": "67",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "light-rain",
+                    "prec-probability": "69",
+                    "prec-amount": "0.4",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "south-south-east"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1003",
+                    "ozone": "406"
+                },
+                "05": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "86",
+                    "mid-clouds": "97",
+                    "high-clouds": "37",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "light-rain",
+                    "prec-probability": "88",
+                    "prec-amount": "0.6",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "south"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1003",
+                    "ozone": "403"
+                },
+                "06": {
+                    "conditions": "bad",
+                    "total-clouds": "97",
+                    "low-clouds": "86",
+                    "mid-clouds": "94",
+                    "high-clouds": "12",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "light-rain",
+                    "prec-probability": "95",
+                    "prec-amount": "0.7",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "south"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1003",
+                    "ozone": "400"
+                },
+                "07": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "91",
+                    "mid-clouds": "90",
+                    "high-clouds": "13",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "light-rain",
+                    "prec-probability": "86",
+                    "prec-amount": "0.5",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "south-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1003",
+                    "ozone": "396"
+                },
+                "08": {
+                    "conditions": "bad",
+                    "total-clouds": "99",
+                    "low-clouds": "96",
+                    "mid-clouds": "86",
+                    "high-clouds": "15",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "light-rain",
+                    "prec-probability": "78",
+                    "prec-amount": "0.5",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "south-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1003",
+                    "ozone": "397"
+                },
+                "09": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "83",
+                    "high-clouds": "12",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "59",
+                    "prec-amount": "0.2",
+                    "wind": {
+                        "speed": "6.44",
+                        "direction": "south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1004",
+                    "ozone": "397"
+                },
+                "10": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "87",
+                    "high-clouds": "22",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "44",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1004",
+                    "ozone": "397"
+                },
+                "11": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "93",
+                    "high-clouds": "40",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "43",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-1",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1004",
+                    "ozone": "395"
+                }
+            }
+        },
+        "day-6": {
+            "date": {
+                "long": "Tuesday",
+                "short": "25"
+            },
+            "sun": {
+                "rise": "06:42",
+                "set": "17:48",
+                "transit": "12:16",
+                "civil-dark": [
+                    "18:17",
+                    "06:13"
+                ],
+                "nautical-dark": [
+                    "18:50",
+                    "05:40"
+                ],
+                "astro-dark": [
+                    "19:23",
+                    "05:07"
+                ]
+            },
+            "moon": {
+                "rise": "06:15",
+                "set": "14:56",
+                "phase": {
+                    "name": "Waning Crescent",
+                    "percentage": "3%"
+                },
+                "meridian": {
+                    "time": "11:10",
+                    "altitude": "28.2",
+                    "distance": "369896.45"
+                }
+            },
+            "hours": {
+                "12": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "100",
+                    "mid-clouds": "98",
+                    "high-clouds": "63",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "40",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "8.05",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-1",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1003",
+                    "ozone": "393"
+                },
+                "13": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "93",
+                    "mid-clouds": "95",
+                    "high-clouds": "88",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "37",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-1",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1003",
+                    "ozone": "391"
+                },
+                "14": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "86",
+                    "mid-clouds": "87",
+                    "high-clouds": "86",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "40",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-1",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1003",
+                    "ozone": "387"
+                },
+                "15": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "81",
+                    "mid-clouds": "82",
+                    "high-clouds": "80",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "41",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-1",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1004",
+                    "ozone": "383"
+                },
+                "16": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "75",
+                    "mid-clouds": "86",
+                    "high-clouds": "65",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "40",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-1",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1004",
+                    "ozone": "379"
+                },
+                "17": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "70",
+                    "mid-clouds": "88",
+                    "high-clouds": "70",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "41",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "2",
+                        "feels-like": "-2",
+                        "dew-point": "2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1004",
+                    "ozone": "377"
+                },
+                "18": {
+                    "conditions": "bad",
+                    "total-clouds": "100",
+                    "low-clouds": "65",
+                    "mid-clouds": "93",
+                    "high-clouds": "55",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "39",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "1",
+                        "feels-like": "-2",
+                        "dew-point": "1"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1005",
+                    "ozone": "375"
+                },
+                "19": {
+                    "conditions": "bad",
+                    "total-clouds": "99",
+                    "low-clouds": "71",
+                    "mid-clouds": "72",
+                    "high-clouds": "13",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "36",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "1",
+                        "feels-like": "-2",
+                        "dew-point": "1"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1006",
+                    "ozone": "373"
+                },
+                "20": {
+                    "conditions": "bad",
+                    "total-clouds": "98",
+                    "low-clouds": "75",
+                    "mid-clouds": "49",
+                    "high-clouds": "2",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "35",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "1",
+                        "feels-like": "-3",
+                        "dew-point": "1"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1006",
+                    "ozone": "373"
+                },
+                "21": {
+                    "conditions": "bad",
+                    "total-clouds": "97",
+                    "low-clouds": "81",
+                    "mid-clouds": "25",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "36",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "1",
+                        "feels-like": "-4",
+                        "dew-point": "1"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1006",
+                    "ozone": "373"
+                },
+                "22": {
+                    "conditions": "bad",
+                    "total-clouds": "93",
+                    "low-clouds": "62",
+                    "mid-clouds": "21",
+                    "high-clouds": "1",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "33",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "1",
+                        "feels-like": "-4",
+                        "dew-point": "1"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1007",
+                    "ozone": "372"
+                },
+                "23": {
+                    "conditions": "bad",
+                    "total-clouds": "87",
+                    "low-clouds": "44",
+                    "mid-clouds": "21",
+                    "high-clouds": "3",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "37",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "0",
+                        "feels-like": "-4",
+                        "dew-point": "0"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1007",
+                    "ozone": "375"
+                },
+                "00": {
+                    "conditions": "bad",
+                    "total-clouds": "91",
+                    "low-clouds": "25",
+                    "mid-clouds": "22",
+                    "high-clouds": "2",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "40",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-0",
+                        "feels-like": "-4",
+                        "dew-point": "-1"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1008",
+                    "ozone": "377"
+                },
+                "01": {
+                    "conditions": "bad",
+                    "total-clouds": "77",
+                    "low-clouds": "20",
+                    "mid-clouds": "33",
+                    "high-clouds": "1",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "37",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-1",
+                        "feels-like": "-5",
+                        "dew-point": "-1"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1008",
+                    "ozone": "379"
+                },
+                "02": {
+                    "conditions": "bad",
+                    "total-clouds": "66",
+                    "low-clouds": "15",
+                    "mid-clouds": "41",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "41",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-1",
+                        "feels-like": "-5",
+                        "dew-point": "-1"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1008",
+                    "ozone": "377"
+                },
+                "03": {
+                    "conditions": "bad",
+                    "total-clouds": "70",
+                    "low-clouds": "20",
+                    "mid-clouds": "54",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "44",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west-south-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-1",
+                        "feels-like": "-5",
+                        "dew-point": "-2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1009",
+                    "ozone": "375"
+                },
+                "04": {
+                    "conditions": "bad",
+                    "total-clouds": "70",
+                    "low-clouds": "20",
+                    "mid-clouds": "37",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "40",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "9.66",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-6",
+                        "dew-point": "-2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1009",
+                    "ozone": "373"
+                },
+                "05": {
+                    "conditions": "bad",
+                    "total-clouds": "65",
+                    "low-clouds": "20",
+                    "mid-clouds": "21",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "42",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-7",
+                        "dew-point": "-2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1010",
+                    "ozone": "372"
+                },
+                "06": {
+                    "conditions": "bad",
+                    "total-clouds": "60",
+                    "low-clouds": "15",
+                    "mid-clouds": "4",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "48",
+                    "prec-amount": "0.2",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-7",
+                        "dew-point": "-2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1011",
+                    "ozone": "372"
+                },
+                "07": {
+                    "conditions": "bad",
+                    "total-clouds": "55",
+                    "low-clouds": "15",
+                    "mid-clouds": "14",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "42",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-7",
+                        "dew-point": "-3"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1012",
+                    "ozone": "372"
+                },
+                "08": {
+                    "conditions": "bad",
+                    "total-clouds": "55",
+                    "low-clouds": "15",
+                    "mid-clouds": "25",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "38",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "11.27",
+                        "direction": "west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-6",
+                        "dew-point": "-2"
+                    },
+                    "rel-humidity": "100",
+                    "pressure": "1012",
+                    "ozone": "370"
+                },
+                "09": {
+                    "conditions": "bad",
+                    "total-clouds": "60",
+                    "low-clouds": "15",
+                    "mid-clouds": "35",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "44",
+                    "prec-amount": "0.2",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-6",
+                        "dew-point": "-2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1013",
+                    "ozone": "368"
+                },
+                "10": {
+                    "conditions": "bad",
+                    "total-clouds": "55",
+                    "low-clouds": "15",
+                    "mid-clouds": "25",
+                    "high-clouds": "0",
+                    "visibility": "0.0",
+                    "fog": "0",
+                    "prec-type": "snow",
+                    "prec-probability": "38",
+                    "prec-amount": "0.1",
+                    "wind": {
+                        "speed": "12.87",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-2",
+                        "feels-like": "-6",
+                        "dew-point": "-2"
+                    },
+                    "rel-humidity": "98",
+                    "pressure": "1014",
+                    "ozone": "366"
+                },
+                "11": {
+                    "conditions": "bad",
+                    "total-clouds": "60",
+                    "low-clouds": "20",
+                    "mid-clouds": "13",
+                    "high-clouds": "0",
+                    "visibility": "1.61",
+                    "fog": "0",
+                    "prec-type": "none",
+                    "prec-probability": "29",
+                    "prec-amount": "0",
+                    "wind": {
+                        "speed": "14.48",
+                        "direction": "west-north-west"
+                    },
+                    "frost": "frost",
+                    "temperature": {
+                        "general": "-1",
+                        "feels-like": "-5",
+                        "dew-point": "-2"
+                    },
+                    "rel-humidity": "96",
+                    "pressure": "1014",
+                    "ozone": "366"
+                }
+            }
+        }
+    }
+}
