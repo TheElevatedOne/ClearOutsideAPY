@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0", "bs4", "html5lib", "requests"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -12,9 +12,16 @@ description = "Webscraper and parser for clearoutside.com"
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: only",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "bs4",
+    "html5lib",
+    "requests",
+]
+license = {text = "GPL-3.0"}
+readme = "README.md"
 
 [project.urls]
 Homepage = "https://github.com/TheElevatedOne/ClearOutsideAPY"
