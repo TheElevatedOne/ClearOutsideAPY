@@ -1,6 +1,7 @@
 # ClearOutsideAPY
 
 [![PyPI - Version](https://img.shields.io/pypi/v/clear-outside-apy?style=for-the-badge)](https://pypi.org/project/clear-outside-apy/)
+![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2FTheElevatedOne%2FClearOutsideAPY%2Frefs%2Fheads%2Fmain%2Fpyproject.toml&style=for-the-badge)
 
 
 ## Webscraper/API for ClearOutside.com
