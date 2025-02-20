@@ -9,9 +9,9 @@ Created using BeautifulSoup
 ## Usage
 
 ```python
-from clear_outside_api import ClearOutsideAPI
+from clear_outside_apy import ClearOutsideAPY
 
-api = ClearOutsideAPI(long, lat, view)
+api = ClearOutsideAPY(long, lat, view)
 api.update()
 result = api.pull()
 ```
