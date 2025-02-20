@@ -7,9 +7,12 @@ Python module for scraping and parsing data from [clearoutside.com](https://clea
 Created using [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), [requests](https://pypi.org/project/requests/) and [html5lib](https://pypi.org/project/html5lib/).
 
 ## Installation
+From [PyPI](https://pypi.org/project/clear-outside-apy/):
+```
+pip install clear-outside-apy
+```
 
 From repo:
-
 ```
 pip install git+https://github.com/TheElevatedOne/ClearOutsideAPY.git
 ```
