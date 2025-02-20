@@ -34,106 +34,25 @@ result = api.pull()
 - `update()` -> scrapes the website <br>
 - `pull()` -> parses and pulls the data; returns a giant dictionary
 
-### Result Preview and Information
+## Output Preview
 
-- Units are metric:
-  - km/s for wind,
-  - mm for rain,
-  - etc.
+### Units:
+**This Module outputs everything in Metric Units and European/Military time (24h)**
+- Date format: dd/MM/yy,
+- Sky Quality:
+  - Brightness - millicandela per meter squared,
+  - Artificial Brightness - candela per meter squared,
+- Distance/Visibility: kilometers; (if showing 0.0, data is missing from the website),
+- Rain: millimeters,
+- Speed: kilometers per hour
+- Temperature: degrees Celsius
+- Pressure: millibars
+- Ozone: Dobson Unit (du)
+
+### Result:
+Showing a piece of resulting dictionary in json format.
+
+The entire dictionary is around 4000 lines long in json format as it shows 17 types of information per hour in a day for 24 hours and 7 days.
 
 ```json
-{
-    "gen-info": {
-        "last-gen": {   # Date & Time of last update
-            "date": "19/02/25",
-            "time": "04:26:05"
-        },
-        "forecast": {   # Range of dates
-            "from-day": "19/02/25",
-            "to-day": "25/02/25"
-        },
-        "timezone": "UTC+1.00"
-    },
-    "sky-quality": {  # Sky Quality for specified location
-        "magnitude": "21.08",
-        "bortle_class": "4",
-        "brightness": [
-            "0.4",
-            "mcd/m2"
-        ],
-        "artif-brightness": [
-            "227.54",
-            "cd/m2"
-        ]
-    },
-    "forecast": {
-        "day-0": {
-            "date": { 
-                "long": "Wednesday",
-                "short": "19"
-            },
-            "sun": {    # Sun times and ranges of darkness
-                "rise": "06:46",
-                "set": "17:15",
-                "transit": "12:01",
-                "civil-dark": [
-                    "17:47",
-                    "06:14"
-                ],
-                "nautical-dark": [
-                    "18:23",
-                    "05:38"
-                ],
-                "astro-dark": [
-                    "18:59",
-                    "05:02"
-                ]
-            },
-            "moon": {   # Moon information
-                "rise": "23:50",
-                "set": "08:59",
-                "phase": {
-                    "name": "Waning Gibbous",
-                    "percentage": "65%"
-                },
-                "meridian": {
-                    "time": "04:29",
-                    "altitude": "21.6",
-                    "distance": "404161.0"
-                }
-            },
-            "hours": {
-                "12": {
-                    "conditions": "ok",
-                    "total-clouds": "46",  # Clouds are in percentages
-                    "low-clouds": "43",
-                    "mid-clouds": "0",
-                    "high-clouds": "0",
-                    "visibility": "0.0", # if 0, then the data is missing from the website
-                    "fog": "0",
-                    "prec-type": "none",
-                    "prec-probability": "0",
-                    "prec-amount": "0",
-                    "wind": {
-                        "speed": "8.05",
-                        "direction": "north-west"
-                    },
-                    "frost": "frost",
-                    "temperature": {
-                        "general": "2",
-                        "feels-like": "-1",
-                        "dew-point": "-9"
-                    },
-                    "pressure": "43", # in mbar
-                    "ozone": "1028" # in du
-                },
-                "11": {...}
-            }
-        },
-        "day-1": {...}
-    }
-}
-```
-
-```
 ```
