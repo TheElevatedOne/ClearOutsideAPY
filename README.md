@@ -1,5 +1,8 @@
 # ClearOutsideAPY
 
+[![PyPI - Version](https://img.shields.io/pypi/v/clear-outside-apy?style=for-the-badge)](https://pypi.org/project/clear-outside-apy/)
+
+
 ## Webscraper/API for ClearOutside.com
 
 Python module for scraping and parsing data from [clearoutside.com](https://clearoutside.com)
