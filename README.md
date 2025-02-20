@@ -23,6 +23,7 @@ result = api.pull()
   - `midnight` -> start at 12am/24:00
   - `current` -> start at current time  
 <br>
+
 - `__init__` -> initializes the class, scrapes the website for the first time <br>
 - `update()` -> scrapes the website <br>
 - `pull()` -> parses and pulls the data; returns a giant dictionary
