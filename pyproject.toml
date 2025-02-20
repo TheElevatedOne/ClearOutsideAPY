@@ -21,7 +21,6 @@ dependencies = [
     "requests",
 ]
 license = {text = "GPL-3.0"}
-readme = "README.md"
 
 [project.urls]
 Homepage = "https://github.com/TheElevatedOne/ClearOutsideAPY"
