@@ -21,8 +21,8 @@ result = api.pull()
 - `view` -> string in three formats: 
   - `midday` -> start at 12pm/12:00
   - `midnight` -> start at 12am/24:00
-  - `current` -> start at current time  
-<br>
+  - `current` -> start at current time
+    
 
 - `__init__` -> initializes the class, scrapes the website for the first time <br>
 - `update()` -> scrapes the website <br>
