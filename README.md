@@ -8,7 +8,9 @@ Created using [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), [reque
 
 ## Installation
 From repo:
-`pip install git+https://github.com/TheElevatedOne/ClearOutsideAPY.git`
+```
+pip install git+https://github.com/TheElevatedOne/ClearOutsideAPY.git
+```
 
 ## Usage
 
