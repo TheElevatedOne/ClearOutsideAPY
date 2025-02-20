@@ -15,15 +15,14 @@ api = ClearOutsideAPY(long, lat, view)
 api.update()
 result = api.pull()
 ```
+- long -> longitude with two decimal places in either float or string type <br>
+- lat -> latitude with two decimal places in either float or string type <br>
+- view - string in three formats:
+  - "midday" - start at 12pm/12:00; "midnight" - start at 12am/24:00; "current" - start at current time  
 
-> long -> longitude with two decimal places in either float or string type <br>
-> lat -> latitude with two decimal places in either float or string type <br>
-> view - string in three formats:
->> "midday" - start at 12pm/12:00; "midnight" - start at 12am/24:00; "current" - start at current time  
-
-> `__init__` -> initializes the class, scrapes the website for the first time <br>
-> `update()` -> scrapes the website <br>
-> `pull()` -> parses and pulls the data; returns a giant dictionary
+- `__init__` -> initializes the class, scrapes the website for the first time <br>
+- `update()` -> scrapes the website <br>
+- `pull()` -> parses and pulls the data; returns a giant dictionary
 
 ### Result Preview and Information
 
