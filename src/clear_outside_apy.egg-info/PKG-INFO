@@ -1,3 +1,20 @@
+Metadata-Version: 2.2
+Name: clear_outside_apy
+Version: 1.0.1
+Summary: Webscraper and parser for clearoutside.com
+Author-email: ELEVATED <admin@elevated.ovh>
+License: GPL-3.0
+Project-URL: Homepage, https://github.com/TheElevatedOne/ClearOutsideAPY
+Project-URL: Issues, https://github.com/TheElevatedOne/ClearOutsideAPY/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: bs4
+Requires-Dist: html5lib
+Requires-Dist: requests
+
 # ClearOutsideAPY
 
 [![PyPI - Version](https://img.shields.io/pypi/v/clear-outside-apy?style=for-the-badge)](https://pypi.org/project/clear-outside-apy/)

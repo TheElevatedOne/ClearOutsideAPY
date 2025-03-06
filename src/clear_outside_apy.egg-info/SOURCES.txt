@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/clear_outside_apy.py
+src/clear_outside_apy.egg-info/PKG-INFO
+src/clear_outside_apy.egg-info/SOURCES.txt
+src/clear_outside_apy.egg-info/dependency_links.txt
+src/clear_outside_apy.egg-info/requires.txt
+src/clear_outside_apy.egg-info/top_level.txt

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "clear_outside_apy"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="ELEVATED", email="admin@elevated.ovh" },
 ]
@@ -12,7 +12,7 @@ description = "Webscraper and parser for clearoutside.com"
 readme = "README.md"
 requires-python = ">=3.10"
 classifiers = [
-    "Programming Language :: Python :: 3 :: only",
+    "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
 dependencies = [

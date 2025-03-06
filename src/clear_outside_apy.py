@@ -80,13 +80,6 @@ class ClearOutsideAPY:
                 "rise": moon_meridian_raw[-7],
                 "set": moon_meridian_raw[-2],
                 "phase": {"name": moon_phase_raw[0], "percentage": moon_phase_raw[1]},
-                "meridian": {
-                    "time": moon_meridian_raw[1],
-                    "altitude": moon_meridian_raw[6].replace("\u00b0", ""),
-                    "distance": str(
-                        round(int(moon_meridian_raw[10].replace(",", "")) * 1.609344, 2)
-                    ),
-                },
             }
 
             sunlight_raw_ = (
