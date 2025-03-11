@@ -25,3 +25,4 @@ license = {text = "GPL-3.0"}
 [project.urls]
 Homepage = "https://github.com/TheElevatedOne/ClearOutsideAPY"
 Issues = "https://github.com/TheElevatedOne/ClearOutsideAPY/issues"
+Changelog = "https://github.com/TheElevatedOne/ClearOutsideAPY/blob/main/CHANGELOG.md"
