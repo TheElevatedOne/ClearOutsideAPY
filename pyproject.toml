@@ -1,28 +1,62 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=77.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "clear_outside_apy"
-version = "1.0.1"
+name = "clear-outside-apy"
+version = "2.0.0"
 authors = [
-  { name="ELEVATED", email="admin@elevated.ovh" },
+  { name = "ELEVATED", email = "admin@elevated.ovh" },
 ]
-description = "Webscraper and parser for clearoutside.com"
+description = "Fast web scraper and parser for clearoutside.com astronomy weather forecasts"
 readme = "README.md"
 requires-python = ">=3.10"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+keywords = ["weather", "astronomy", "forecast", "clearoutside", "scraper"]
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
     "Operating System :: OS Independent",
+    "Programming Language :: C",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: Scientific/Engineering :: Astronomy",
 ]
-dependencies = [
-    "bs4",
-    "html5lib",
-    "requests",
-]
-license = {text = "GPL-3.0"}
+dependencies = []
 
 [project.urls]
 Homepage = "https://github.com/TheElevatedOne/ClearOutsideAPY"
 Issues = "https://github.com/TheElevatedOne/ClearOutsideAPY/issues"
 Changelog = "https://github.com/TheElevatedOne/ClearOutsideAPY/blob/main/CHANGELOG.md"
+
+[project.scripts]
+clear-outside-apy = "clear_outside_apy.__main__:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+clear_outside_apy = ["py.typed"]
+
+[tool.setuptools.exclude-package-data]
+clear_outside_apy = ["*.c"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "network: tests that hit clearoutside.com",
+]
