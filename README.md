@@ -38,6 +38,14 @@ Building a wheel / tarball for upload:
 python -m twine upload dist/*
 ```
 
+On Linux, `./build.sh` runs [auditwheel](https://github.com/pypa/auditwheel)
+so the wheel is tagged `manylinux_*` (PEP 600). PyPI rejects the older
+`linux_x86_64` platform tag. You need `patchelf` installed for that step.
+macOS (`macosx_*`) and Windows (`win_amd64`) tags are accepted as-is.
+
+For portable wheels across Python versions, use
+[cibuildwheel](https://cibuildwheel.pypa.io/) (config is in `pyproject.toml`).
+
 ## Usage
 
 ```python

@@ -135,6 +135,8 @@ static int is_ws(unsigned char c)
     return c == ' ' || c == '\t' || c == '\n' || c == '\r';
 }
 
+static unsigned long parse_ulong(const char *s, const char **end, int base);
+
 static void trim_inplace(char *s)
 {
     char *start = s;
@@ -239,12 +241,12 @@ static Py_ssize_t html_text(const char *s, const char *e, char *out, Py_ssize_t 
                 const char *num = s + 2;
                 int hex = 0;
                 unsigned long cp;
-                char *endptr;
+                const char *endptr;
                 if (*num == 'x' || *num == 'X') {
                     hex = 1;
                     num++;
                 }
-                cp = strtoul(num, &endptr, hex ? 16 : 10);
+                cp = parse_ulong(num, &endptr, hex ? 16 : 10);
                 if (endptr > num && *endptr == ';') {
                     if (cp < 0x80) {
                         out[n++] = (char)cp;
@@ -337,21 +339,56 @@ static double round2(double x)
     return (double)((long long)(x * 100.0 - 0.5)) / 100.0;
 }
 
+/* Hand-rolled so we do not pick up glibc 2.38's __isoc23_strtol. */
+static unsigned long parse_ulong(const char *s, const char **end, int base)
+{
+    unsigned long v = 0;
+    int digit;
+    while (*s) {
+        if (*s >= '0' && *s <= '9') {
+            digit = *s - '0';
+        } else if (base == 16 && *s >= 'a' && *s <= 'f') {
+            digit = *s - 'a' + 10;
+        } else if (base == 16 && *s >= 'A' && *s <= 'F') {
+            digit = *s - 'A' + 10;
+        } else {
+            break;
+        }
+        if (digit >= base) {
+            break;
+        }
+        v = v * (unsigned long)base + (unsigned long)digit;
+        s++;
+    }
+    *end = s;
+    return v;
+}
+
 static int parse_int_text(const char *s, int *out)
 {
-    char *end;
-    long v;
+    int sign = 1;
+    const char *end;
+    unsigned long v;
     while (*s && is_ws((unsigned char)*s)) {
         s++;
     }
     if (!*s || (s[0] == '-' && s[1] == '\0')) {
         return 0;
     }
-    v = strtol(s, &end, 10);
+    if (*s == '-') {
+        sign = -1;
+        s++;
+    } else if (*s == '+') {
+        s++;
+    }
+    if (*s < '0' || *s > '9') {
+        return 0;
+    }
+    v = parse_ulong(s, &end, 10);
     if (end == s) {
         return 0;
     }
-    *out = (int)v;
+    *out = (int)v * sign;
     return 1;
 }
 

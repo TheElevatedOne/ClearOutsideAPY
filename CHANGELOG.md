@@ -28,7 +28,9 @@ incomplete. 2.0 is a C parser behind the same `ClearOutsideAPY` import.
 
 ### Packaging
 - Installable package layout: `from clear_outside_apy import ClearOutsideAPY`.
-- `./build.sh` produces the PyPI source tarball and wheel.
+- `./build.sh` produces the PyPI source tarball and a wheel.
+- Linux wheels are retagged with auditwheel to `manylinux_*`. PyPI no longer
+  accepts `linux_x86_64`.
 - Console script: `clear-outside-apy LAT LON`.
 
 ### Breaking changes vs 1.x

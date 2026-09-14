@@ -60,3 +60,8 @@ addopts = "-q"
 markers = [
     "network: tests that hit clearoutside.com",
 ]
+
+# cibuildwheel produces manylinux/musllinux/macosx/win tags that PyPI accepts.
+# A raw `python -m build` Linux wheel is linux_x86_64 and is rejected.
+[tool.cibuildwheel]
+skip = ["pp*"]
