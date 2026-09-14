@@ -5,11 +5,17 @@
 
 ![clear-outside-apy-logo](logo/clear-outside-apy.png)
 
-## Webscraper/API for ClearOutside.com
+## Web scraper / parser for ClearOutside.com
 
-Python module for scraping and parsing data from [clearoutside.com](https://clearoutside.com)
+Python module that downloads a [clearoutside.com](https://clearoutside.com)
+forecast page and parses the 7-day hourly astronomy weather table.
 
-Created using [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/), [requests](https://pypi.org/project/requests/) and [html5lib](https://pypi.org/project/html5lib/).
+Version 2.0 is a C extension. There are no BeautifulSoup / html5lib /
+requests dependencies. Parsing a full page is typically 1–2 milliseconds;
+the remaining time is the HTTP round-trip.
+
+A compiler is required **to build from source**. PyPI wheels ship the
+already-compiled extension.
 
 ## Installation
 
@@ -19,10 +25,17 @@ From [PyPI](https://pypi.org/project/clear-outside-apy/):
 pip install clear-outside-apy
 ```
 
-From repo:
+From the repo:
 
 ```
 pip install git+https://github.com/TheElevatedOne/ClearOutsideAPY.git
+```
+
+Building a wheel / tarball for upload:
+
+```
+./build.sh
+python -m twine upload dist/*
 ```
 
 ## Usage
@@ -30,136 +43,148 @@ pip install git+https://github.com/TheElevatedOne/ClearOutsideAPY.git
 ```python
 from clear_outside_apy import ClearOutsideAPY
 
-api = ClearOutsideAPY(lat: str, long: str, view: str = "midday")
-api.update()
-result = api.pull()
+api = ClearOutsideAPY("43.16", "-75.84", view="midday")
+api.update()          # download again
+result = api.pull()   # parse; returns a dict
 ```
 
-- `lat` -> latitude with two decimal places
-- `long` -> longitude with two decimal places
-  - ex. `lat = "43.16", long = "-75.84"` -> [New York](https://clearoutside.com/forecast/43.16/-75.84)  
-- `view` -> string in three formats:
-  - `midday` -> start at 12pm/12:00
-  - `midnight` -> start at 12am/24:00
-  - `current` -> start at current time
+`lat` and `long` may be `str`, `int`, or `float`. They are formatted to two
+decimal places, which is what the site uses.
 
-- `__init__` -> initializes the class, scrapes the website for the first time <br>
-- `update()` -> scrapes the website <br>
-- `pull()` -> parses and pulls the data; returns a giant dictionary
+```
+lat = "43.16", long = "-75.84"  ->  New York area
+https://clearoutside.com/forecast/43.16/-75.84
+```
 
-## Output Preview
+- `view`
+  - `midday` — first column is 12:00
+  - `midnight` — first column is 00:00
+  - `current` — first column is the current local hour
+- `experimental=True` — also fetch Met.no and 7Timer extra rows
+- `metric=True` (default) — visibility, wind speed, and moon distance in km
+- `lon=` is accepted as a keyword alias for `long`
 
-### Units
+One-shot helper and HTML parser (no download):
 
-**This Module outputs everything in Metric Units and European/Military time (24h)**
+```python
+from clear_outside_apy import fetch_forecast, parse
 
-- Date format: dd/MM/yy,
-- Sky Quality:
-  - Brightness - millicandela per meter squared,
-  - Artificial Brightness - candela per meter squared,
-- Distance/Visibility: kilometers; (if showing 0.0, data is missing from the website),
-- Rain: millimeters,
-- Speed: kilometers per hour
-- Temperature: degrees Celsius
-- Pressure: millibars
-- Ozone: Dobson Unit (du)
+result = fetch_forecast(43.16, -75.84, view="current")
+result = parse(open("forecast.html", "rb").read())
+```
 
-### Result
+CLI:
 
-Showing a piece of resulting dictionary in json format.
+```
+clear-outside-apy 43.16 -75.84 --view midday
+python -m clear_outside_apy 43.16 -75.84 --experimental
+```
 
-The entire dictionary is around 4000 lines long in json format as it shows 17 types of information per hour in a day for 24 hours and 7 days.
+## Output
 
-If you want to see the entire file for some unknown reason, go here [example/example-result.json](https://github.com/TheElevatedOne/ClearOutsideAPY/blob/main/example/example-result.json).
+**Default units are metric, 24-hour clock.**
 
-```json
+| Field | Unit |
+| --- | --- |
+| Date | `dd/MM/yy` |
+| Sky brightness | millicandela / m² (`mcd/m2`) |
+| Artificial brightness | microcandela / m² (`ucd/m2`) |
+| Visibility | kilometres (`None` when the site has `-`) |
+| Precipitation | millimetres |
+| Wind speed | kilometres / hour |
+| Wind direction | compass name + degrees |
+| Temperature | °C |
+| Pressure | millibars |
+| Ozone | Dobson units |
+| Moon distance | kilometres |
+
+Pass `metric=False` to keep the site's miles / mph for distance and wind.
+
+The full dict is large (7 days × 24 hours). A captured example lives in
+[example/example-result.json](example/example-result.json). Shape:
+
+```python
 {
-    "gen-info": {
-        "last-gen": {
-            "date": "19/02/25",
-            "time": "20:26:52"
-        },
-        "forecast": {
-            "from-day": "19/02/25",
-            "to-day": "25/02/25"
-        },
-        "timezone": "UTC-5.00"
-    },
-    "sky-quality": {
-        "magnitude": "21.3",
-        "bortle_class": "4",
-        "brightness": [
-            "0.33",
-            "mcd/m2"
-        ],
-        "artif-brightness": [
-            "155.5",
-            "cd/m2"
-        ]
-    },
-    "forecast": {
-        "day-0": {
-            "date": {
-                "long": "Wednesday",
-                "short": "19"
-            },
-            "sun": {
-                "rise": "06:51",
-                "set": "17:40",
-                "transit": "12:17",
-                "civil-dark": [
-                    "18:09",
-                    "06:22"
-                ],
-                "nautical-dark": [
-                    "18:42",
-                    "05:49"
-                ],
-                "astro-dark": [
-                    "19:15",
-                    "05:16"
-                ]
-            },
-            "moon": {
-                "rise": "01:12",
-                "set": "10:07",
-                "phase": {
-                    "name": "Waning Gibbous",
-                    "percentage": "53%"
-                }
-            },
-            "hours": {
-                "12": {
-                    "conditions": "bad",
-                    "total-clouds": "91",
-                    "low-clouds": "90",
-                    "mid-clouds": "13",
-                    "high-clouds": "18",
-                    "visibility": "0.0",
-                    "fog": "0",
-                    "prec-type": "none",
-                    "prec-probability": "0",
-                    "prec-amount": "0",
-                    "wind": {
-                        "speed": "17.7",
-                        "direction": "north-west"
-                    },
-                    "frost": "frost",
-                    "temperature": {
-                        "general": "-9",
-                        "feels-like": "-14",
-                        "dew-point": "-13"
-                    },
-                    "rel-humidity": "74",
-                    "pressure": "1028",
-                    "ozone": "375"
-                },
-                "13": {"..."},
-                "..."
-            }
-        },
-        "day-1": {"..."},
-        "..."
+  "location": {
+    "name": "Oneida Lake Beach West, Madison, United States of America",
+    "latitude": "43.16",
+    "longitude": "-75.84"
+  },
+  "url": "https://clearoutside.com/forecast/43.16/-75.84?view=midday",
+  "view": "midday",
+  "experimental": False,
+  "units": { "visibility": "km", "wind-speed": "km/h", "...": "..." },
+  "gen-info": {
+    "last-gen": { "date": "14/09/26", "time": "04:09:45" },
+    "forecast": { "from-day": "14/09/26", "to-day": "20/09/26" },
+    "timezone": "UTC-4.00"
+  },
+  "sky-quality": {
+    "magnitude": 21.3,
+    "bortle_class": 4,
+    "brightness": { "value": 0.33, "unit": "mcd/m2" },
+    "artif-brightness": { "value": 155.5, "unit": "ucd/m2" }
+  },
+  "forecast": {
+    "day-0": {
+      "date": { "long": "Monday", "short": "14" },
+      "sun": {
+        "rise": "06:42", "set": "19:16", "transit": "12:58",
+        "civil-dark": ["19:44", "06:14"],
+        "nautical-dark": ["20:18", "05:40"],
+        "astro-dark": ["20:53", "05:05"]
+      },
+      "moon": {
+        "rise": "10:38", "set": "20:07",
+        "phase": { "name": "Waxing Crescent", "percentage": 8 },
+        "meridian": {
+          "time": "14:53", "date": "13/09/2026",
+          "altitude": 33.0, "distance": 388599.37, "distance-unit": "km"
+        }
+      },
+      "hours": {
+        "12": {
+          "conditions": "ok",
+          "total-clouds": 45,
+          "low-clouds": 35,
+          "mid-clouds": 0,
+          "high-clouds": 1,
+          "visibility": None,
+          "fog": None,
+          "prec-type": "none",
+          "prec-probability": 0,
+          "prec-amount": 0.0,
+          "wind": { "speed": 9.66, "direction": "west-south-west", "degrees": 258 },
+          "frost": "none",
+          "temperature": { "general": 25, "feels-like": 27, "dew-point": 20 },
+          "rel-humidity": 72,
+          "pressure": 1012,
+          "ozone": 309,
+          "iss": None
+        }
+      }
     }
+  }
 }
 ```
+
+ISS hours look like:
+
+```python
+"iss": {
+  "start": { "time": "20:36:19", "direction": "W", "altitude": 10 },
+  "max":   { "time": "20:39:19", "direction": "NNW", "altitude": 29 },
+  "end":   { "time": "20:41:59", "direction": "NE", "altitude": 12 },
+  "magnitude": -1.6
+}
+```
+
+With `experimental=True` each hour also has `extra.metno` and `extra.timer`
+(7Timer cloud cover, seeing, lifted index, transparency).
+
+## Exceptions
+
+- `InvalidLocationError` — bad latitude / longitude / view
+- `FetchError` — HTTP or network failure
+- `ParseError` — HTML is not a Clear Outside forecast page
+- `ClearOutsideError` — base class for all of the above

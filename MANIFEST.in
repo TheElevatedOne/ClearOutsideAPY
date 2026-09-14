@@ -1,0 +1,10 @@
+include LICENSE
+include README.md
+include CHANGELOG.md
+include build.sh
+include src/clear_outside_apy/_parser.c
+recursive-include tests *.py
+recursive-include tests/fixtures *.html
+recursive-include logo *
+recursive-include example *
+include clear-outside-apy.svg
