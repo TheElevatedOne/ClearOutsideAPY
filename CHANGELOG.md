@@ -1,5 +1,37 @@
 # Changelog
 
+## ClearOutsideAPY 3.0.0
+
+Now a Cloudflare Python Worker instead of a PyPI package with a C extension.
+
+### Worker / HTTP API
+- `GET /forecast/{lat}/{lon}` with `view`, `experimental` and `units` query
+  parameters returns the forecast as JSON. `GET /` describes the API.
+- Errors are JSON with status codes: 400 for bad input, 404, 405, and 502 when
+  clearoutside.com is unreachable or returns a page that is not a forecast.
+- CORS is open to any origin.
+- Caching: the upstream page is cached by Cloudflare (`cf.cacheTtl`), and
+  responses go through the Workers Cache API and carry `Cache-Control`.
+  `CACHE_TTL` in `wrangler.jsonc` controls all three (default 900 s).
+- Run with `uv run pywrangler dev` and deploy with `uv run pywrangler deploy`.
+
+### Library
+- The C parser is ported to pure Python (`clear_outside_apy.parser`), because
+  Pyodide cannot load custom C extensions. Output is identical to 2.0 on all
+  test fixtures, in both metric and imperial units.
+- Downloads use the Workers `fetch` API with an `AbortSignal` timeout,
+  replacing `urllib`.
+
+### Breaking changes vs 2.x
+- `ClearOutsideAPY.update()`, `ClearOutsideAPY.pull()`, `fetch_forecast()`
+  and `fetch_html()` are now `async`, and they only run inside the Workers
+  runtime. `parse()` still works anywhere.
+- `ClearOutsideAPY(...)` no longer downloads in `__init__`, and the `fetch=`
+  argument is gone. `pull()` downloads on first use.
+- New `cache_ttl=` option (upstream cache seconds, `0` to disable).
+- The CLI (`clear-outside-apy`, `python -m clear_outside_apy`), the PyPI build
+  (`setup.py`, `build.sh`, cibuildwheel config) and the C extension were removed.
+
 ## ClearOutsideAPY 2.0.0
 
 Rewrite. The 1.x BeautifulSoup / html5lib scraper was slow, index-based, and

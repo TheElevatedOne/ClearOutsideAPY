@@ -1,97 +1,103 @@
 # ClearOutsideAPY
 
-[![PyPI - Version](https://img.shields.io/pypi/v/clear-outside-apy?style=for-the-badge)](https://pypi.org/project/clear-outside-apy/)
 ![Python Version from PEP 621 TOML](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2FTheElevatedOne%2FClearOutsideAPY%2Frefs%2Fheads%2Fmain%2Fpyproject.toml&style=for-the-badge) ![Static Badge](https://img.shields.io/badge/Vibecoded-Grok-black?style=for-the-badge&labelColor=%236F0E82)
 
 
 ![clear-outside-apy-logo](logo/clear-outside-apy.png)
 
-## Web scraper / parser for ClearOutside.com
+## clearoutside.com forecast API on Cloudflare Workers
 
-Python module that downloads a [clearoutside.com](https://clearoutside.com)
-forecast page and parses the 7-day hourly astronomy weather table.
+A [Cloudflare Python Worker](https://developers.cloudflare.com/workers/languages/python/)
+that downloads a [clearoutside.com](https://clearoutside.com) forecast page and
+returns the 7-day hourly astronomy weather table as JSON.
 
-Version 2.0 is a C extension. There are no BeautifulSoup / html5lib /
-requests dependencies. Parsing a full page is typically 1–2 milliseconds;
-the remaining time is the HTTP round-trip.
+Version 3.0 replaces the 2.0 C extension with a pure-Python parser, because
+Python Workers run on Pyodide and cannot load custom C extensions. The output
+format is unchanged; the parser was checked field by field against the C
+version on every test fixture. There are no third-party runtime dependencies.
 
-A compiler is required **to build from source**. PyPI wheels ship the
-already-compiled extension.
+## Running it
 
-## Installation
-
-From [PyPI](https://pypi.org/project/clear-outside-apy/):
-
-```
-pip install clear-outside-apy
-```
-
-From the repo:
+You need [uv](https://docs.astral.sh/uv/) and Node.js. `pywrangler` (from the
+`workers-py` dev dependency) wraps Wrangler and bundles the Python sources.
 
 ```
-pip install git+https://github.com/TheElevatedOne/ClearOutsideAPY.git
+uv sync                      # dev tools: pywrangler, pytest
+uv run pywrangler dev        # local server on http://localhost:8787
+uv run pywrangler deploy     # deploy to your Cloudflare account
+uv run pytest                # tests (plain CPython, no network)
 ```
 
-Building a wheel / tarball for upload:
+Configuration is in `wrangler.jsonc`. `CACHE_TTL` (seconds, default `900`)
+sets how long Cloudflare may cache the upstream page, how long the
+Worker's own responses are cached, and the `Cache-Control` max-age sent to
+clients. Set it to `0` to turn caching off.
+
+### CPU time
+
+Parsing a page takes about 20 ms of CPU under Pyodide. That fits the Workers
+Paid plan, but it is over the Free plan's 10 ms per-request limit, so uncached
+requests on the Free plan can fail with "exceeded CPU". Cached responses cost
+almost nothing. The response cache uses the Workers Cache API, which only
+works when the Worker is on a custom domain or route. On `*.workers.dev`
+every request is parsed again.
+
+## HTTP API
 
 ```
-./build.sh
-python -m twine upload dist/*
+GET /forecast/{lat}/{lon}?view=midday&experimental=0&units=metric
 ```
 
-On Linux, `./build.sh` runs [auditwheel](https://github.com/pypa/auditwheel)
-so the wheel is tagged `manylinux_*` (PEP 600). PyPI rejects the older
-`linux_x86_64` platform tag. You need `patchelf` installed for that step.
-macOS (`macosx_*`) and Windows (`win_amd64`) tags are accepted as-is.
+`lat` and `lon` are decimal degrees. They are rounded to two decimal places,
+which is what the site uses.
 
-For portable wheels across Python versions, use
-[cibuildwheel](https://cibuildwheel.pypa.io/) (config is in `pyproject.toml`).
+```
+/forecast/43.16/-75.84  ->  https://clearoutside.com/forecast/43.16/-75.84 (New York area)
+```
 
-## Usage
+| Query | Values | Default |
+| --- | --- | --- |
+| `view` | `midday` (first column 12:00), `midnight` (00:00), `current` (current local hour) | `midday` |
+| `experimental` | `1` / `0` (also `true`/`false`, `yes`/`no`, `on`/`off`). Adds Met.no and 7Timer rows | `0` |
+| `units` | `metric` (km, km/h) or `imperial` (the site's miles, mph) | `metric` |
+
+`GET /` returns a short description of the API.
+
+| Status | When |
+| --- | --- |
+| `200` | Forecast JSON (see below) |
+| `400` | Bad coordinates, `view`, `units` or `experimental` |
+| `404` | Unknown path |
+| `405` | Method other than `GET` / `OPTIONS` |
+| `502` | clearoutside.com could not be reached, or returned something that is not a forecast page |
+
+Errors look like `{"error": {"type": "InvalidLocationError", "message": "..."}}`.
+All responses allow CORS from any origin.
+
+## Using the library inside your own Worker
+
+`src/clear_outside_apy` can also be dropped into another Python Worker.
+Fetching is async and goes through the Workers `fetch` API:
 
 ```python
-from clear_outside_apy import ClearOutsideAPY
+from clear_outside_apy import ClearOutsideAPY, fetch_forecast, parse
 
 api = ClearOutsideAPY("43.16", "-75.84", view="midday")
-api.update()          # download again
-result = api.pull()   # parse; returns a dict
+result = await api.pull()     # downloads on first use, then parses
+await api.update()            # download a fresh copy
+
+result = await fetch_forecast(43.16, -75.84, view="current", experimental=True)
+result = parse(html_bytes)    # no download; also works under plain CPython
 ```
 
-`lat` and `long` may be `str`, `int`, or `float`. They are formatted to two
-decimal places, which is what the site uses.
-
-```
-lat = "43.16", long = "-75.84"  ->  New York area
-https://clearoutside.com/forecast/43.16/-75.84
-```
-
-- `view`
-  - `midday` — first column is 12:00
-  - `midnight` — first column is 00:00
-  - `current` — first column is the current local hour
-- `experimental=True` — also fetch Met.no and 7Timer extra rows
-- `metric=True` (default) — visibility, wind speed, and moon distance in km
-- `lon=` is accepted as a keyword alias for `long`
-
-One-shot helper and HTML parser (no download):
-
-```python
-from clear_outside_apy import fetch_forecast, parse
-
-result = fetch_forecast(43.16, -75.84, view="current")
-result = parse(open("forecast.html", "rb").read())
-```
-
-CLI:
-
-```
-clear-outside-apy 43.16 -75.84 --view midday
-python -m clear_outside_apy 43.16 -75.84 --experimental
-```
+Keyword options: `experimental`, `metric` (default `True`), `timeout`
+(seconds, default 20), `user_agent`, and `cache_ttl` (upstream cache, default
+900, `0` to disable). `lon=` is accepted as a keyword alias for `long`.
 
 ## Output
 
-**Default units are metric, 24-hour clock.**
+**Default units are metric, 24-hour clock.** Use `?units=imperial` (or
+`metric=False` in Python) to keep the site's miles / mph for distance and wind.
 
 | Field | Unit |
 | --- | --- |
@@ -106,8 +112,6 @@ python -m clear_outside_apy 43.16 -75.84 --experimental
 | Pressure | millibars |
 | Ozone | Dobson units |
 | Moon distance | kilometres |
-
-Pass `metric=False` to keep the site's miles / mph for distance and wind.
 
 The full dict is large (7 days × 24 hours). A captured example lives in
 [example/example-result.json](example/example-result.json). Shape:
@@ -188,12 +192,12 @@ ISS hours look like:
 }
 ```
 
-With `experimental=True` each hour also has `extra.metno` and `extra.timer`
+With `experimental=1` each hour also has `extra.metno` and `extra.timer`
 (7Timer cloud cover, seeing, lifted index, transparency).
 
 ## Exceptions
 
-- `InvalidLocationError` — bad latitude / longitude / view
-- `FetchError` — HTTP or network failure
-- `ParseError` — HTML is not a Clear Outside forecast page
-- `ClearOutsideError` — base class for all of the above
+- `InvalidLocationError`: bad latitude / longitude / view (HTTP 400)
+- `FetchError`: HTTP or network failure, including timeouts (HTTP 502)
+- `ParseError`: the HTML is not a Clear Outside forecast page (HTTP 502)
+- `ClearOutsideError`: base class for all of the above

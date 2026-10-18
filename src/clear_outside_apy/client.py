@@ -1,21 +1,21 @@
-"""Python client for Clear Outside forecast pages."""
+"""Async Clear Outside client for Cloudflare Python Workers."""
 
 from __future__ import annotations
 
-import urllib.error
-import urllib.request
 from typing import Any
 
-from .exceptions import FetchError, InvalidLocationError, ParseError
-from ._parser import ParseError as _CParseError
-from ._parser import parse_html as _parse_html
+from .exceptions import FetchError, InvalidLocationError
+from .parser import parse_html as _parse_html
 
 BASE_URL = "https://clearoutside.com/forecast/{lat}/{lon}"
 VIEWS = ("midday", "midnight", "current")
 DEFAULT_USER_AGENT = (
-    "ClearOutsideAPY/2.0 (+https://github.com/TheElevatedOne/ClearOutsideAPY)"
+    "ClearOutsideAPY/3.0 (+https://github.com/TheElevatedOne/ClearOutsideAPY)"
 )
 DEFAULT_TIMEOUT = 20.0
+# How long Cloudflare may cache the upstream page. The site regenerates
+# forecasts a few times a day, so this mostly spares it repeat requests.
+DEFAULT_UPSTREAM_TTL = 900
 
 
 def _format_coord(value: float | int | str, name: str, lo: float, hi: float) -> str:
@@ -23,7 +23,7 @@ def _format_coord(value: float | int | str, name: str, lo: float, hi: float) -> 
         number = float(value)
     except (TypeError, ValueError) as exc:
         raise InvalidLocationError(f"{name} must be a number, got {value!r}") from exc
-    if number < lo or number > hi:
+    if not lo <= number <= hi:
         raise InvalidLocationError(f"{name} must be between {lo} and {hi}, got {number}")
     return f"{number:.2f}"
 
@@ -59,30 +59,34 @@ def parse(html: str | bytes, *, metric: bool = True) -> dict[str, Any]:
         payload = bytes(html)
     else:
         raise TypeError("html must be str or bytes")
-    try:
-        return _parse_html(payload, metric)
-    except _CParseError as exc:
-        raise ParseError(str(exc)) from exc
+    return _parse_html(payload, metric)
 
 
-def fetch_html(
+async def fetch_html(
     url: str,
     *,
     timeout: float = DEFAULT_TIMEOUT,
     user_agent: str | None = None,
+    cache_ttl: int = DEFAULT_UPSTREAM_TTL,
 ) -> bytes:
-    """Download a forecast page and return the raw HTML bytes."""
-    headers = {"User-Agent": user_agent or DEFAULT_USER_AGENT, "Accept": "text/html"}
-    request = urllib.request.Request(url, headers=headers)
+    """Download a forecast page with the Workers ``fetch`` API."""
+    # Only importable inside the Workers runtime (Pyodide).
+    from js import AbortSignal
+    from workers import fetch
+
+    options: dict[str, Any] = {
+        "headers": {"User-Agent": user_agent or DEFAULT_USER_AGENT, "Accept": "text/html"},
+        "signal": AbortSignal.timeout(int(timeout * 1000)),
+    }
+    if cache_ttl > 0:
+        options["cf"] = {"cacheTtl": cache_ttl, "cacheEverything": True}
     try:
-        with urllib.request.urlopen(request, timeout=timeout) as response:
-            return response.read()
-    except urllib.error.HTTPError as exc:
-        raise FetchError(f"HTTP {exc.code} fetching {url}") from exc
-    except urllib.error.URLError as exc:
-        raise FetchError(f"failed to fetch {url}: {exc.reason}") from exc
-    except TimeoutError as exc:
-        raise FetchError(f"timed out fetching {url}") from exc
+        response = await fetch(url, **options)
+    except Exception as exc:  # JsException: DNS, TLS, abort/timeout, ...
+        raise FetchError(f"failed to fetch {url}: {exc}") from exc
+    if not response.ok:
+        raise FetchError(f"HTTP {response.status} fetching {url}")
+    return await response.bytes()
 
 
 class ClearOutsideAPY:
@@ -102,12 +106,12 @@ class ClearOutsideAPY:
     metric:
         Convert visibility, wind speed, and moon distance to kilometres.
         Temperatures stay in Celsius (that is how the site serves them).
-    timeout, user_agent:
-        HTTP client settings.
-    fetch:
-        When true (the default, matching 1.x), download the page in
-        ``__init__``. Set false to construct the client and call
-        ``update()`` later.
+    timeout, user_agent, cache_ttl:
+        Upstream fetch settings. ``cache_ttl`` is how many seconds Cloudflare
+        may cache the clearoutside.com page (0 disables it).
+
+    Nothing is downloaded in ``__init__``; ``await pull()`` fetches the page
+    on first use, and ``await update()`` downloads a fresh copy.
     """
 
     def __init__(
@@ -121,7 +125,7 @@ class ClearOutsideAPY:
         metric: bool = True,
         timeout: float = DEFAULT_TIMEOUT,
         user_agent: str | None = None,
-        fetch: bool = True,
+        cache_ttl: int = DEFAULT_UPSTREAM_TTL,
     ) -> None:
         if long is None and lon is None:
             raise TypeError("longitude is required (positional 'long' or keyword 'lon')")
@@ -137,23 +141,25 @@ class ClearOutsideAPY:
         self.metric = bool(metric)
         self.timeout = float(timeout)
         self.user_agent = user_agent or DEFAULT_USER_AGENT
+        self.cache_ttl = int(cache_ttl)
         self.url = build_url(
             self.lat, self.long, view=self.view, experimental=self.experimental
         )
         self.html: bytes | None = None
-        if fetch:
-            self.update()
 
-    def update(self) -> None:
+    async def update(self) -> None:
         """Download a fresh copy of the forecast page."""
-        self.html = fetch_html(
-            self.url, timeout=self.timeout, user_agent=self.user_agent
+        self.html = await fetch_html(
+            self.url,
+            timeout=self.timeout,
+            user_agent=self.user_agent,
+            cache_ttl=self.cache_ttl,
         )
 
-    def pull(self) -> dict[str, Any]:
-        """Parse the current HTML and return the forecast dictionary."""
+    async def pull(self) -> dict[str, Any]:
+        """Parse the downloaded HTML (fetching it first if needed)."""
         if self.html is None:
-            self.update()
+            await self.update()
         assert self.html is not None
         result = parse(self.html, metric=self.metric)
         result["url"] = self.url
@@ -168,7 +174,7 @@ class ClearOutsideAPY:
         )
 
 
-def fetch_forecast(
+async def fetch_forecast(
     lat: float | int | str,
     long: float | int | str | None = None,
     view: str = "midday",
@@ -178,6 +184,7 @@ def fetch_forecast(
     metric: bool = True,
     timeout: float = DEFAULT_TIMEOUT,
     user_agent: str | None = None,
+    cache_ttl: int = DEFAULT_UPSTREAM_TTL,
 ) -> dict[str, Any]:
     """One-shot helper: download and parse a forecast."""
     client = ClearOutsideAPY(
@@ -189,6 +196,7 @@ def fetch_forecast(
         metric=metric,
         timeout=timeout,
         user_agent=user_agent,
-        fetch=True,
+        cache_ttl=cache_ttl,
     )
-    return client.pull()
+    return await client.pull()
+

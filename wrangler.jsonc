@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "clear-outside-api",
+  "main": "src/entry.py",
+  "compatibility_date": "2026-10-01",
+  "compatibility_flags": ["python_workers"],
+  "observability": { "enabled": true },
+  "vars": {
+    // Seconds that responses (and the upstream clearoutside.com page) may be cached.
+    "CACHE_TTL": "900"
+  }
+}

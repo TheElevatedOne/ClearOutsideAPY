@@ -1,4 +1,4 @@
-"""Web scraper / parser for clearoutside.com astronomy weather forecasts."""
+"""clearoutside.com forecast scraper for Cloudflare Python Workers."""
 
 from .client import (
     BASE_URL,
@@ -6,6 +6,7 @@ from .client import (
     ClearOutsideAPY,
     build_url,
     fetch_forecast,
+    fetch_html,
     parse,
 )
 from .exceptions import (
@@ -15,7 +16,7 @@ from .exceptions import (
     ParseError,
 )
 
-__version__ = "2.0.0"
+__version__ = "3.0.0"
 __all__ = [
     "BASE_URL",
     "VIEWS",
@@ -27,5 +28,6 @@ __all__ = [
     "InvalidLocationError",
     "ParseError",
     "fetch_forecast",
+    "fetch_html",
     "__version__",
 ]

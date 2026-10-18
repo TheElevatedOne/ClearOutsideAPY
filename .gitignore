@@ -39,3 +39,12 @@ htmlcov/
 *~
 
 yee
+
+# Cloudflare / pywrangler
+.wrangler/
+node_modules/
+src/vendor/
+python_modules/
+.dev.vars
+.venv-workers/
+pylock.toml
