@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "clear-outside-api",
+  "name": "clearoutsideapy",
   "main": "src/entry.py",
   "compatibility_date": "2026-10-01",
   "compatibility_flags": ["python_workers"],
